@@ -1,0 +1,160 @@
+const DOWNLOAD_URL =
+  "https://lp.bollygame.com/m/share?channel=0&userId=3784779&shareCode=3784779&bindCode=100";
+
+export default function Hero() {
+  return (
+    <section className="relative overflow-hidden bg-[#050B12] py-20 text-white">
+
+      {/* Background Glow */}
+
+      <div className="absolute -left-40 top-0 h-96 w-96 rounded-full bg-green-500/20 blur-3xl"></div>
+
+      <div className="absolute right-0 bottom-0 h-[450px] w-[450px] rounded-full bg-emerald-500/10 blur-3xl"></div>
+
+      <div className="relative mx-auto flex max-w-7xl flex-col items-center gap-16 px-6 lg:flex-row">
+
+        {/* Left */}
+
+        <div className="flex-1">
+
+          <span className="rounded-full border border-green-500 bg-green-500/10 px-5 py-2 text-green-400">
+            India's Trusted Gaming Platform
+          </span>
+
+          <h1 className="mt-8 text-5xl font-black leading-tight md:text-7xl">
+            Play
+            <span className="text-green-400">
+              BollyGame
+            </span>
+          </h1>
+
+          <p className="mt-6 max-w-xl text-lg leading-8 text-gray-400">
+            Download the latest PlayBollyGame APK and enjoy welcome bonuses,
+            daily rewards, referral benefits and exciting gaming experiences.
+          </p>
+
+          <div className="mt-10 flex flex-wrap gap-4">
+
+            <a
+              href={DOWNLOAD_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-xl bg-gradient-to-r from-green-500 to-emerald-600 px-8 py-4 font-bold text-white transition duration-300 hover:scale-105 hover:shadow-[0_0_25px_rgba(34,197,94,.45)]"
+            >
+              Download APK
+            </a>
+
+            <a
+              href="#blogs"
+              className="rounded-xl border border-green-500 px-8 py-4 font-bold transition hover:bg-green-500 hover:text-white"
+            >
+              Read Blogs
+            </a>
+
+          </div>
+
+          <div className="mt-16 grid grid-cols-2 gap-6 md:grid-cols-4">
+
+            <div>
+              <h2 className="text-4xl font-black text-green-400">
+                1M+
+              </h2>
+
+              <p className="mt-2 text-gray-400">
+                Downloads
+              </p>
+            </div>
+
+            <div>
+              <h2 className="text-4xl font-black text-green-400">
+                ₹10Cr+
+              </h2>
+
+              <p className="mt-2 text-gray-400">
+                Rewards
+              </p>
+            </div>
+
+            <div>
+              <h2 className="text-4xl font-black text-green-400">
+                24/7
+              </h2>
+
+              <p className="mt-2 text-gray-400">
+                Support
+              </p>
+            </div>
+
+            <div>
+              <h2 className="text-4xl font-black text-green-400">
+                99.9%
+              </h2>
+
+              <p className="mt-2 text-gray-400">
+                Uptime
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+        {/* Right */}
+
+        <div className="relative flex flex-1 justify-center">
+
+          <div className="absolute h-96 w-96 rounded-full bg-green-500/20 blur-3xl"></div>
+
+          <div className="relative flex h-[620px] w-[320px] flex-col items-center justify-center rounded-[42px] border border-slate-700 bg-gradient-to-b from-slate-900 to-slate-950 shadow-[0_0_60px_rgba(34,197,94,.35)]">
+
+            <div className="absolute top-5 h-6 w-36 rounded-full bg-black"></div>
+
+            <a
+              href={DOWNLOAD_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="/logo.png"
+                alt="PlayBollyGame"
+                className="h-28 w-28 rounded-3xl transition duration-300 hover:scale-110"
+              />
+            </a>
+
+            <h3 className="mt-8 text-3xl font-bold">
+              Play
+              <span className="text-green-400">
+                BollyGame
+              </span>
+            </h3>
+
+            <p className="mt-4 px-8 text-center text-gray-400">
+              India's Trusted Gaming Platform
+            </p>
+
+            <a
+              href={DOWNLOAD_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-10 rounded-full bg-gradient-to-r from-green-500 to-emerald-600 px-8 py-3 font-bold text-white transition duration-300 hover:scale-105 hover:shadow-[0_0_25px_rgba(34,197,94,.45)]"
+            >
+              Download APK
+            </a>
+
+            <div className="mt-8 rounded-full border border-green-500 px-6 py-2 text-sm text-green-400">
+              Latest Version
+            </div>
+
+            <div className="mt-6 text-center text-gray-500">
+              Fast • Secure • Daily Rewards
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+  );
+}
