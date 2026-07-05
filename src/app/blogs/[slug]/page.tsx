@@ -17,23 +17,29 @@ export default async function BlogPage({ params }: Props) {
   }
 
   return (
-    <main className="min-h-screen bg-[#050B12] py-32 text-white">
+    <main className="min-h-screen bg-[#050B12] py-24 text-white">
       <div className="mx-auto max-w-4xl px-6">
 
-        <span className="rounded-full bg-green-500 px-4 py-2 text-sm">
+        <span className="rounded-full bg-green-500/20 px-4 py-2 text-green-400">
           {blog.category}
         </span>
 
-        <h1 className="mt-8 text-5xl font-bold">
+        <h1 className="mt-6 text-5xl font-black">
           {blog.title}
         </h1>
 
-        <p className="mt-4 text-gray-400">
+        <p className="mt-4 text-gray-500">
           {blog.date}
         </p>
 
-        <div className="mt-12 rounded-3xl bg-slate-900 p-10 whitespace-pre-line leading-8 text-gray-300">
-          {blog.content}
+        <img
+          src={blog.image}
+          alt={blog.title}
+          className="mt-10 w-full rounded-3xl object-cover"
+        />
+
+        <div className="mt-12 rounded-3xl bg-slate-900 p-10 leading-8 text-gray-300">
+          {blog.description}
         </div>
 
       </div>
