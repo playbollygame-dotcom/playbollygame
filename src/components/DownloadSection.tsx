@@ -21,7 +21,7 @@ export default function DownloadSection() {
           rel="noopener noreferrer"
           className="mt-10 inline-block rounded-xl bg-black px-8 py-4 text-lg font-bold hover:bg-slate-900 transition"
         >
-          📥 Download APK
+          📥 Download Bollygame
         </a>
 
       </div>

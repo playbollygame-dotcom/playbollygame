@@ -1,3 +1,7 @@
+"use client";
+
+import Blogs from "@/components/Blogs";
+
 export default function BlogsPage() {
   return (
     <main className="min-h-screen bg-[#050B12] text-white py-32">
@@ -13,6 +17,8 @@ export default function BlogsPage() {
         </p>
 
       </div>
+
+      <Blogs showAll />
 
     </main>
   );

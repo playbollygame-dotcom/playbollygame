@@ -19,9 +19,21 @@ const categories = [
   "Updates",
   "Events",
   "Tips",
+  "Android",
+  "Account",
+  "Features",
+  "Comparison",
+  "Privacy",
+  "Performance",
+  "Troubleshooting",
+  "FAQ",
 ];
 
-export default function Blogs() {
+interface BlogsProps {
+  showAll?: boolean;
+}
+
+export default function Blogs({ showAll = false }: BlogsProps) {
   const [search, setSearch] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("All");
 
@@ -42,6 +54,10 @@ export default function Blogs() {
       return matchesSearch && matchesCategory;
     });
   }, [search, selectedCategory]);
+
+  const displayedBlogs = showAll
+    ? filteredBlogs
+    : filteredBlogs.slice(0, 6);
 
   return (
     <section
@@ -66,8 +82,6 @@ export default function Blogs() {
 
         </div>
 
-        {/* Search */}
-
         <div className="mx-auto mt-10 max-w-xl">
 
           <div className="flex items-center rounded-2xl border border-slate-700 bg-slate-900 px-5">
@@ -85,8 +99,6 @@ export default function Blogs() {
           </div>
 
         </div>
-
-        {/* Categories */}
 
         <div className="mt-10 flex flex-wrap justify-center gap-3">
 
@@ -108,11 +120,9 @@ export default function Blogs() {
 
         </div>
 
-        {/* Blog Cards */}
-
         <div className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
 
-          {filteredBlogs.map((blog) => (
+          {displayedBlogs.map((blog) => (
 
             <article
               key={blog.id}
@@ -163,6 +173,17 @@ export default function Blogs() {
         {filteredBlogs.length === 0 && (
           <div className="mt-16 text-center text-gray-400">
             No blogs found.
+          </div>
+        )}
+
+        {!showAll && (
+          <div className="mt-16 flex justify-center">
+            <Link
+              href="/blogs"
+              className="rounded-xl bg-green-500 px-8 py-4 text-lg font-semibold text-white transition hover:bg-green-600"
+            >
+              View All Blogs →
+            </Link>
           </div>
         )}
 

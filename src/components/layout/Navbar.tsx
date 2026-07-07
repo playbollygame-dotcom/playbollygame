@@ -65,7 +65,7 @@ export default function Navbar() {
           className="hidden md:flex items-center gap-2 rounded-xl bg-green-500 px-5 py-3 font-semibold hover:bg-green-600"
         >
           <FaDownload />
-          Download APK
+          Download BollyGame APK
         </a>
 
         {/* Mobile Button */}
@@ -103,7 +103,7 @@ export default function Navbar() {
               rel="noopener noreferrer"
               className="mt-5 rounded-xl bg-green-500 py-3 text-center font-semibold hover:bg-green-600"
             >
-              Download APK
+              Download BollyGame APK
             </a>
 
           </nav>

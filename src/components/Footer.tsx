@@ -35,7 +35,7 @@ export default function Footer() {
               rel="noopener noreferrer"
               className="mt-6 inline-block rounded-xl bg-green-500 px-6 py-3 font-semibold hover:bg-green-600 transition"
             >
-              Download APK
+              Download Bollygame
             </a>
 
           </div>

@@ -1,5 +1,5 @@
 const steps = [
-  "Click the Download APK button.",
+  "Click the Download BollyGame APK button.",
   "Allow installation from Unknown Sources.",
   "Install the APK.",
   "Open PlayBollyGame.",

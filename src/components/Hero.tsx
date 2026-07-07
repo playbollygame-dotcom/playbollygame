@@ -41,7 +41,7 @@ export default function Hero() {
               rel="noopener noreferrer"
               className="rounded-xl bg-gradient-to-r from-green-500 to-emerald-600 px-8 py-4 font-bold text-white transition duration-300 hover:scale-105 hover:shadow-[0_0_25px_rgba(34,197,94,.45)]"
             >
-              Download APK
+              Download BollyGame APK
             </a>
 
             <a
@@ -138,7 +138,7 @@ export default function Hero() {
               rel="noopener noreferrer"
               className="mt-10 rounded-full bg-gradient-to-r from-green-500 to-emerald-600 px-8 py-3 font-bold text-white transition duration-300 hover:scale-105 hover:shadow-[0_0_25px_rgba(34,197,94,.45)]"
             >
-              Download APK
+              Download BollyGame APK
             </a>
 
             <div className="mt-8 rounded-full border border-green-500 px-6 py-2 text-sm text-green-400">

@@ -42,7 +42,7 @@ export default function AppShowcase() {
             rel="noopener noreferrer"
             className="mt-10 inline-block rounded-xl bg-green-500 px-8 py-4 text-lg font-bold hover:bg-green-600 transition"
           >
-            Download APK
+          Download Bollygame
           </a>
 
         </div>

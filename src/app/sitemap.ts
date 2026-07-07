@@ -1,9 +1,10 @@
 import { MetadataRoute } from "next";
+import { blogs } from "@/data/blogs";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://www.playbollygame.com";
 
-  return [
+  const staticPages: MetadataRoute.Sitemap = [
     {
       url: baseUrl,
       lastModified: new Date(),
@@ -13,7 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     {
       url: `${baseUrl}/blogs`,
       lastModified: new Date(),
-      changeFrequency: "weekly",
+      changeFrequency: "daily",
       priority: 0.9,
     },
     {
@@ -29,4 +30,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
   ];
+
+  const blogPages: MetadataRoute.Sitemap = blogs.map((blog) => ({
+    url: `${baseUrl}/blogs/${blog.slug}`,
+    lastModified: new Date(),
+    changeFrequency: "weekly",
+    priority: 0.8,
+  }));
+
+  return [...staticPages, ...blogPages];
 }

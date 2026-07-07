@@ -7,7 +7,7 @@ const faqData = [
   {
     question: "How do I download PlayBollyGame APK?",
     answer:
-      "Click the Download APK button available on the homepage and install the latest version on your Android device.",
+      "Click the Download Bollygame button available on the homepage and install the latest version on your Android device.",
   },
   {
     question: "What is PlayBollyGame APK?",
