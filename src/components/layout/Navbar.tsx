@@ -12,6 +12,7 @@ const DOWNLOAD_URL =
 const links = [
   { name: "Home", href: "/" },
   { name: "Blogs", href: "/blogs" },
+  { name: "Download", href: "/download" },
   { name: "About", href: "/about" },
   { name: "Contact", href: "/contact" },
 ];
