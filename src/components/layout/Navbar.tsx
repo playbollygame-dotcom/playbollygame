@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
@@ -22,12 +23,16 @@ export default function Navbar() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 border-b border-white/10 bg-[#050B12]/80 backdrop-blur-xl">
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6">
-
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3">
-          <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-green-500 text-xl">
-            🎮
-          </div>
+          <Image
+            src="/logo.png"
+            alt="PlayBollyGame Logo"
+            width={52}
+            height={52}
+            priority
+            className="rounded-xl object-contain"
+          />
 
           <div>
             <h1 className="text-2xl font-black text-white">
@@ -57,18 +62,18 @@ export default function Navbar() {
           ))}
         </nav>
 
-        {/* Desktop Download */}
+        {/* Desktop Download Button */}
         <a
           href={DOWNLOAD_URL}
           target="_blank"
           rel="noopener noreferrer"
-          className="hidden md:flex items-center gap-2 rounded-xl bg-green-500 px-5 py-3 font-semibold hover:bg-green-600"
+          className="hidden md:flex items-center gap-2 rounded-xl bg-green-500 px-5 py-3 font-semibold text-white transition hover:bg-green-600"
         >
           <FaDownload />
           Download BollyGame APK
         </a>
 
-        {/* Mobile Button */}
+        {/* Mobile Menu Button */}
         <button
           onClick={() => setMenuOpen(!menuOpen)}
           className="text-2xl text-white md:hidden"
@@ -81,7 +86,6 @@ export default function Navbar() {
       {menuOpen && (
         <div className="border-t border-slate-800 bg-[#081018] md:hidden">
           <nav className="flex flex-col p-6">
-
             {links.map((link) => (
               <Link
                 key={link.href}
@@ -97,15 +101,17 @@ export default function Navbar() {
               </Link>
             ))}
 
+            {/* Mobile Download Button */}
             <a
               href={DOWNLOAD_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-5 rounded-xl bg-green-500 py-3 text-center font-semibold hover:bg-green-600"
+              onClick={() => setMenuOpen(false)}
+              className="mt-5 flex items-center justify-center gap-2 rounded-xl bg-green-500 py-3 font-semibold text-white transition hover:bg-green-600"
             >
+              <FaDownload />
               Download BollyGame APK
             </a>
-
           </nav>
         </div>
       )}
