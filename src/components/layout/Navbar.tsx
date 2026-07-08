@@ -11,8 +11,10 @@ const DOWNLOAD_URL =
 
 const links = [
   { name: "Home", href: "/" },
-  { name: "Blogs", href: "/blogs" },
   { name: "Download", href: "/download" },
+  { name: "Games", href: "/games" },
+  { name: "Blogs", href: "/blogs" },
+  { name: "Bonus Guide", href: "/bonus-guide" },
   { name: "About", href: "/about" },
   { name: "Contact", href: "/contact" },
 ];
@@ -72,7 +74,7 @@ export default function Navbar() {
             className="ml-2 flex items-center gap-2 rounded-xl bg-green-500 px-5 py-3 font-semibold text-white shadow-lg transition-all duration-300 hover:scale-105 hover:bg-green-600"
           >
             <FaDownload />
-            Download APK
+            Download Bollygame
           </a>
 
         </nav>
@@ -116,7 +118,7 @@ export default function Navbar() {
               className="mt-4 flex items-center justify-center gap-2 rounded-xl bg-green-500 py-3 font-semibold text-white shadow-lg transition-all duration-300 hover:bg-green-600"
             >
               <FaDownload />
-              Download APK
+              Download Bollygame
             </a>
 
           </nav>

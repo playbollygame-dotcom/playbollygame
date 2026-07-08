@@ -175,7 +175,7 @@ export default function DownloadPage() {
                 </div>
 
                 <h3 className="mt-6 text-2xl font-bold">
-                  Download APK
+                  Download Bollygame
                 </h3>
 
                 <p className="mt-4 leading-8 text-gray-400">

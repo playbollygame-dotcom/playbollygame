@@ -141,9 +141,14 @@ export default function Hero() {
               Download BollyGame APK
             </a>
 
-            <div className="mt-8 rounded-full border border-green-500 px-6 py-2 text-sm text-green-400">
-              Latest Version
-            </div>
+            <a
+  href={DOWNLOAD_URL}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="mt-8 inline-flex items-center justify-center rounded-full border border-green-500 bg-green-500/10 px-6 py-2 text-sm font-semibold text-green-400 transition hover:bg-green-500 hover:text-white"
+>
+  ⬇ Download Latest Version
+</a>
 
             <div className="mt-6 text-center text-gray-500">
               Fast • Secure • Daily Rewards
