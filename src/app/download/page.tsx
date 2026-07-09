@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import {
   FaDownload,
   FaShieldAlt,
@@ -28,7 +29,23 @@ export default function DownloadPage() {
           <div className="inline-flex rounded-full bg-green-500/20 px-5 py-2 font-semibold text-green-400">
             Official Download Center
           </div>
-
+<div
+  className="mt-8 rounded-3xl border-4 border-red-500"
+  style={{ minHeight: "300px" }}
+>
+  <Image
+    src="/download-banner.webp"
+    alt="Download Banner"
+    width={1200}
+    height={500}
+    priority
+    style={{
+      width: "100%",
+      height: "auto",
+      display: "block",
+    }}
+  />
+</div>
           <h1 className="mt-8 text-5xl font-black leading-tight lg:text-6xl">
             Download PlayBollyGame APK
           </h1>

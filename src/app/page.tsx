@@ -4,6 +4,8 @@ import { useEffect, useState } from "react";
 
 import Navbar from "../components/layout/Navbar";
 import Hero from "../components/Hero";
+import AboutSection from "@/components/AboutSection";
+import AppShowcase from "../components/AppShowcase";
 import AnimatedStats from "../components/AnimatedStats";
 import Features from "../components/Features";
 import ExclusiveRewards from "../components/ExclusiveRewards";
@@ -40,24 +42,40 @@ export default function Home() {
       <Navbar />
 
       <main>
+        {/* Hero */}
         <Hero />
 
+        {/* About */}
+        <AboutSection />
+
+        {/* App Showcase */}
+        <AppShowcase />
+
+        {/* Statistics */}
         <AnimatedStats />
 
+        {/* Features */}
         <Features />
 
+        {/* Exclusive Rewards */}
         <ExclusiveRewards />
 
+        {/* Why Choose */}
         <WhyChoose />
 
+        {/* Testimonials */}
         <Testimonials />
 
+        {/* How To Download */}
         <HowToDownload />
 
+        {/* Blogs */}
         <Blogs />
 
+        {/* FAQ */}
         <FAQ />
 
+        {/* Download */}
         <DownloadSection />
       </main>
 
