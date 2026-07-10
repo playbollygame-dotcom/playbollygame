@@ -10,7 +10,7 @@ const DOWNLOAD_URL =
   "https://lp.bollygame.com/m/share?channel=0&userId=3784779&shareCode=3784779&bindCode=100";
 
 const links = [
-  { name: "Home", href: "/" },
+ { name: "Home", href: "/home" },
   { name: "Download", href: "/download" },
   { name: "Games", href: "/games" },
   { name: "Blogs", href: "/blogs" },
@@ -28,7 +28,7 @@ export default function Navbar() {
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6">
 
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-3">
+        <Link href="/home" className="flex items-center gap-3">
           <Image
             src="/logo.png"
             alt="PlayBollyGame Logo"

@@ -9,237 +9,280 @@ export default function AboutPage() {
 
       <div className="mx-auto max-w-6xl px-6">
 
-        <h1 className="text-center text-5xl font-black">
-          About Us - Welcome to PlayBollyGame
-        </h1>
+        {/* Heading */}
 
-        <p className="mt-10 text-lg leading-9 text-gray-300">
-          Welcome to the ultimate hub of online entertainment and real cash gaming!
-          Humara platform, <span className="font-bold text-green-400">bollygame</span>,
-          India ka ek leading aur most trusted gaming network hai jahan gaming enthusiasts
-          ko ek unique aur safe ecosystem milta hai.
-        </p>
+        <div className="text-center">
 
-        <p className="mt-6 text-lg leading-9 text-gray-300">
-          Agar aap online gaming ke zariye excitement aur high rewards dono chahte hain,
-          toh aap bilkul sahi jagah par aaye hain. Pure internet par the hottest real cash
-          game bollygame ke roop mein jaana jata hai kyunki hum transparency aur ultra-fast
-          payouts ko hamesha priority dete hain.
-        </p>
-
-        <p className="mt-6 text-lg leading-9 text-gray-300">
-          Humari pehchan aur behtareen ranking ka nateejah hai ki Google par search karne par
-          bollygame aapko sabse upar dikhega, jise users kaafi pasand karte hain.
-        </p>
-
-        <div className="mt-16">
-
-          <h2 className="text-4xl font-black text-green-400">
-            Hamara Vision Aur Multi-Gaming Ecosystem
-          </h2>
-
-          <p className="mt-8 text-lg leading-9 text-gray-300">
-            Humara aim hai players ko ek aisi jagah dena jahan wo traditional card games se
-            lekar modern arcade slots tak sab kuch ek hi jagah khel sakein.
+          <p className="uppercase tracking-[6px] text-green-400 font-semibold">
+            About PlayBollyGame
           </p>
 
-          <p className="mt-6 text-lg leading-9 text-gray-300">
-            Is digital space ko simplify karne ke liye aap direct browser par
-            bollygame com type karke hamari official site par enter ho sakte hain.
-            Humare paas har tarah ke players ke liye kuch na kuch khas hai.
-          </p>
+          <h1 className="mt-4 text-5xl font-black leading-tight">
+            Welcome to
+            <span className="block text-green-400">
+              PlayBollyGame
+            </span>
+          </h1>
 
-          <p className="mt-6 text-lg leading-9 text-gray-300">
-            Casual groups mein log hume golly bolly game ke naam se bhi yaad rakhte hain,
-            aur yeh interactive gaming platform har age group ke gaming enthusiasts ko
-            attract karta hai.
-          </p>
-
-          <p className="mt-6 text-lg leading-9 text-gray-300">
-            General terms mein log hume bolly game kehkar pukarte hain, aur is secure
-            gaming network par har transaction fully encrypted rehta hai.
-          </p>
-
-          <p className="mt-6 text-lg leading-9 text-gray-300">
-            Aap chahein toh direct browser dashboard ka use karein ya fir
-            www bollygame online portal par visit karein jahan seamless,
-            lag-free aur dynamic gaming experience milti hai.
-          </p>
-
-          <p className="mt-6 text-lg leading-9 text-gray-300">
-            Agar aap web browser ke bajaye mobile setup pasand karte hain,
-            toh aap hamari optimized standalone application
-            <span className="font-bold text-green-400"> bollygame apk </span>
-            file ka upyog kar sakte hain.
+          <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-gray-400">
+            India's trusted gaming platform offering exciting games,
+            daily rewards, referral bonuses, instant payouts,
+            and a secure gaming experience.
           </p>
 
         </div>
 
-        <div className="mt-16">
+        {/* First Paragraph */}
 
-          <h2 className="text-4xl font-black text-green-400">
-            Humare Games Ki Range
-          </h2>
+        <div className="mt-16 space-y-8 text-lg leading-9 text-gray-300">
 
-          <p className="mt-8 text-lg leading-9 text-gray-300">
-            Humare gaming lounge mein variety ki koi kami nahi hai.
-            Platform par chalne wala Tower Rush strategy aur prediction
-            ka ek anokha blend hai jo players ko exciting gameplay deta hai.
+          <p>
+            Welcome to the ultimate hub of online entertainment and
+            real cash gaming! Humara platform,
+            <span className="font-bold text-green-400">
+              {" "}bollygame
+            </span>,
+            India ka ek leading aur most trusted gaming network hai
+            jahan gaming enthusiasts ko ek unique aur safe ecosystem
+            milta hai.
           </p>
 
-          <ul className="mt-8 list-disc space-y-4 pl-8 text-lg text-gray-300">
-            <li>BollyGame Tower Rush</li>
-            <li>Bolly Game 777</li>
-            <li>Bolly Game 2</li>
-            <li>Bolly Game 3</li>
-            <li>Teen Patti</li>
-            <li>Dragon vs Tiger</li>
-            <li>Lucky Spin</li>
-            <li>Card Games</li>
-          </ul>
+          {/* First Download Button */}
 
-        </div>
-                <div className="mt-16">
+          <div className="flex justify-center">
 
-          <h2 className="text-4xl font-black text-green-400">
-            Download Aur Installation Pipeline
-          </h2>
-
-          <p className="mt-8 text-lg leading-9 text-gray-300">
-            Humare applications ko download karna behad aasan aur surakshit hai.
-            Aap direct servers ke liye official download portal ka upyog kar sakte
-            hain jahan latest setup files available rehti hain.
-          </p>
-
-          <p className="mt-6 text-lg leading-9 text-gray-300">
-            Security standards ke mutabik hamesha official download source ka hi
-            use karein taaki aapka data aur device dono safe rahein.
-          </p>
-
-          <div className="mt-10 rounded-3xl border border-green-500/20 bg-slate-900 p-8">
-
-            <h3 className="text-3xl font-bold">
-              Available Download Options
-            </h3>
-
-            <ul className="mt-8 list-disc space-y-4 pl-8 text-lg text-gray-300">
-              <li>Primary Official APK Download</li>
-              <li>Mirror Server Download</li>
-              <li>Manual APK Installation Package</li>
-              <li>Latest Version APK</li>
-              <li>Fast Download Servers</li>
-              <li>Secure Installation Files</li>
-            </ul>
+            <a
+              href={DOWNLOAD_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 rounded-xl bg-green-500 px-10 py-4 font-bold text-white shadow-lg transition duration-300 hover:scale-105 hover:bg-green-600"
+            >
+              <FaDownload />
+              Download Bollygame
+            </a>
 
           </div>
 
-          <div className="mt-12">
+              <p>
+            Agar aap online gaming ke zariye excitement aur high rewards dono
+            chahte hain, toh aap bilkul sahi jagah par aaye hain. Pure internet
+            par <span className="font-semibold text-green-400">BollyGame</span>{" "}
+            ko ek trusted gaming platform ke roop mein jaana jata hai kyunki
+            hum transparency, secure gameplay, aur fast payouts ko hamesha
+            priority dete hain.
+          </p>
 
-            <h3 className="text-3xl font-bold text-green-400">
-              Installation Steps
-            </h3>
+          <p>
+            Humari pehchan aur behtareen ranking ka nateejah hai ki Google par
+            search karne par BollyGame ko hazaron users roz visit karte hain.
+            Humara goal hai har player ko ek safe, exciting aur rewarding gaming
+            experience dena.
+          </p>
 
-            <ol className="mt-8 list-decimal space-y-5 pl-8 text-lg leading-9 text-gray-300">
-              <li>Download the latest PlayBollyGame APK.</li>
-              <li>Open your phone Settings.</li>
-              <li>Enable <strong>Install from Unknown Sources</strong>.</li>
-              <li>Locate the downloaded APK file.</li>
-              <li>Tap Install.</li>
-              <li>Complete login and start enjoying the platform.</li>
-            </ol>
+          {/* About Banner */}
+
+          <div className="mt-12 overflow-hidden rounded-3xl border border-slate-800 shadow-2xl">
+
+            <img
+              src="/about-banner.webp"
+              alt="PlayBollyGame Bonus Banner"
+              className="w-full object-cover"
+            />
 
           </div>
 
-        </div>
+          <div className="mt-12 rounded-3xl border border-green-500/20 bg-[#081018] p-8">
 
-        <div className="mt-16">
+            <h2 className="text-3xl font-black text-white">
+              Why Thousands of Players Trust PlayBollyGame
+            </h2>
 
-          <h2 className="text-4xl font-black text-green-400">
-            Account Activation, Security Aur Customer Support
-          </h2>
+            <p className="mt-5 text-gray-400 leading-8">
+              PlayBollyGame is designed to deliver an entertaining and rewarding
+              gaming experience with modern features, exciting promotions,
+              referral rewards, and a secure platform for every player.
+            </p>
 
-          <p className="mt-8 text-lg leading-9 text-gray-300">
-            Ek baar app install hone ke baad account verification complete karein.
-            Official login portal ka hi upyog karein taaki aapka wallet aur
-            transactions secure rahein.
-          </p>
+            <div className="mt-10 grid gap-5 md:grid-cols-2">
 
-          <p className="mt-6 text-lg leading-9 text-gray-300">
-            Humare platform par secure login, encrypted transactions aur
-            protected withdrawals available hain jisse players confidence ke
-            sath gaming enjoy kar sakte hain.
-          </p>
+              <div className="rounded-2xl border border-slate-700 bg-[#0D1722] p-6">
+                <h3 className="text-xl font-bold text-green-400">
+                  🎁 Daily Rewards
+                </h3>
 
-          <p className="mt-6 text-lg leading-9 text-gray-300">
-            Hum apne users ko regular promotions, exclusive bonus campaigns,
-            referral rewards aur latest announcements bhi provide karte rehte
-            hain.
-          </p>
+                <p className="mt-3 text-gray-400">
+                  Claim welcome bonuses, login rewards, cashback offers,
+                  and seasonal promotions.
+                </p>
+              </div>
 
-          <div className="mt-10 rounded-3xl bg-slate-900 p-8">
+              <div className="rounded-2xl border border-slate-700 bg-[#0D1722] p-6">
+                <h3 className="text-xl font-bold text-green-400">
+                  ⚡ Fast Withdrawals
+                </h3>
 
-            <h3 className="text-3xl font-bold">
-              Why Players Trust PlayBollyGame
-            </h3>
+                <p className="mt-3 text-gray-400">
+                  Smooth deposits and quick withdrawals help provide a
+                  convenient gaming experience.
+                </p>
+              </div>
 
-            <ul className="mt-8 list-disc space-y-4 pl-8 text-lg text-gray-300">
-              <li>Fast withdrawals</li>
-              <li>Secure transactions</li>
-              <li>Smooth gameplay</li>
-              <li>24×7 customer support</li>
-              <li>Referral rewards</li>
-              <li>Regular bonus campaigns</li>
-              <li>Daily promotions</li>
-              <li>Reliable gaming platform</li>
-            </ul>
+              <div className="rounded-2xl border border-slate-700 bg-[#0D1722] p-6">
+                <h3 className="text-xl font-bold text-green-400">
+                  👥 Referral Program
+                </h3>
+
+                <p className="mt-3 text-gray-400">
+                  Invite eligible friends and participate in referral campaigns
+                  to unlock additional rewards.
+                </p>
+              </div>
+
+              <div className="rounded-2xl border border-slate-700 bg-[#0D1722] p-6">
+                <h3 className="text-xl font-bold text-green-400">
+                  🔒 Secure Platform
+                </h3>
+
+                <p className="mt-3 text-gray-400">
+                  Reliable payment methods and account protection make
+                  PlayBollyGame a trusted platform.
+                </p>
+              </div>
+
+            </div>
 
           </div>
 
-        </div>
-                <div className="mt-16">
+                 <div className="mt-16">
 
-          <h2 className="text-4xl font-black text-green-400">
-            Final Words
-          </h2>
+            <h2 className="text-4xl font-black text-center text-white">
+              Why Choose PlayBollyGame?
+            </h2>
 
-          <p className="mt-8 text-lg leading-9 text-gray-300">
-            PlayBollyGame ka objective players ko ek secure, smooth aur
-            entertaining gaming experience provide karna hai. Hamara platform
-            modern technology, fast performance aur easy navigation ke sath
-            design kiya gaya hai taaki har user bina kisi difficulty ke games
-            enjoy kar sake.
-          </p>
+            <p className="mx-auto mt-5 max-w-3xl text-center text-lg leading-8 text-gray-400">
+              PlayBollyGame continues to attract thousands of gaming enthusiasts
+              by offering exciting games, secure transactions, attractive
+              rewards, and a smooth user experience across devices.
+            </p>
 
-          <p className="mt-6 text-lg leading-9 text-gray-300">
-            Chahe aap naye player hon ya experienced gamer, PlayBollyGame par
-            aapko exciting games, promotional offers, referral opportunities aur
-            user-friendly interface ka experience milega. Hamari dedicated team
-            platform ko continuously improve karti rehti hai taaki users ko
-            better experience mil sake.
-          </p>
+            <div className="mt-12 grid gap-6 md:grid-cols-3">
 
-          <p className="mt-6 text-lg leading-9 text-gray-300">
-            Agar aap PlayBollyGame use karna chahte hain, toh hamesha official
-            download link ka hi use karein aur latest version install karein.
-            Official source se download karne se aapko latest updates aur secure
-            application milti hai.
-          </p>
+              <div className="rounded-2xl border border-slate-700 bg-[#0D1722] p-6">
+                <div className="text-4xl">🎮</div>
 
-        </div>
+                <h3 className="mt-5 text-2xl font-bold text-white">
+                  Exciting Games
+                </h3>
 
-        {/* Download Button */}
+                <p className="mt-3 text-gray-400">
+                  Enjoy Teen Patti, Dragon vs Tiger, Lucky Spin,
+                  Color Prediction, Card Games, and many more.
+                </p>
+              </div>
 
-        <div className="mt-20 flex justify-center">
+              <div className="rounded-2xl border border-slate-700 bg-[#0D1722] p-6">
+                <div className="text-4xl">💰</div>
 
-          <a
-            href={DOWNLOAD_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 rounded-2xl bg-gradient-to-r from-green-500 to-emerald-600 px-10 py-5 text-xl font-bold text-white transition duration-300 hover:scale-105 hover:shadow-[0_0_25px_rgba(34,197,94,.45)]"
-          >
-            <FaDownload />
-            Download BollyGame
-          </a>
+                <h3 className="mt-5 text-2xl font-bold text-white">
+                  Daily Rewards
+                </h3>
+
+                <p className="mt-3 text-gray-400">
+                  Welcome bonuses, cashback offers, referral rewards,
+                  login bonuses, and exclusive campaigns.
+                </p>
+              </div>
+
+              <div className="rounded-2xl border border-slate-700 bg-[#0D1722] p-6">
+                <div className="text-4xl">🚀</div>
+
+                <h3 className="mt-5 text-2xl font-bold text-white">
+                  Smooth Experience
+                </h3>
+
+                <p className="mt-3 text-gray-400">
+                  Fast loading, secure payments, and responsive design
+                  for mobile and desktop users.
+                </p>
+              </div>
+
+            </div>
+
+          </div>
+
+          {/* FAQ */}
+
+          <div className="mt-20">
+
+            <h2 className="text-4xl font-black text-center text-white">
+              Frequently Asked Questions
+            </h2>
+
+            <div className="mt-10 space-y-6">
+
+              <div className="rounded-2xl border border-slate-700 bg-[#0D1722] p-6">
+                <h3 className="text-xl font-bold text-white">
+                  What is PlayBollyGame?
+                </h3>
+
+                <p className="mt-3 text-gray-400">
+                  PlayBollyGame is an online gaming platform offering exciting
+                  games, promotional campaigns, referral rewards, and a smooth
+                  gaming experience.
+                </p>
+              </div>
+
+              <div className="rounded-2xl border border-slate-700 bg-[#0D1722] p-6">
+                <h3 className="text-xl font-bold text-white">
+                  Does PlayBollyGame offer bonuses?
+                </h3>
+
+                <p className="mt-3 text-gray-400">
+                  Eligible users can participate in welcome rewards, referral
+                  campaigns, cashback promotions, and other limited-time offers.
+                </p>
+              </div>
+
+              <div className="rounded-2xl border border-slate-700 bg-[#0D1722] p-6">
+                <h3 className="text-xl font-bold text-white">
+                  Is PlayBollyGame beginner friendly?
+                </h3>
+
+                <p className="mt-3 text-gray-400">
+                  Yes. The platform is designed with a simple interface that
+                  makes it easy for new users to register and explore games.
+                </p>
+              </div>
+
+            </div>
+
+          </div>
+
+          {/* Final CTA */}
+
+          <div className="mt-20 rounded-3xl bg-gradient-to-r from-green-500 to-green-600 p-10 text-center">
+
+            <h2 className="text-4xl font-black text-white">
+              Ready to Play?
+            </h2>
+
+            <p className="mx-auto mt-5 max-w-3xl text-lg text-green-100">
+              Download the latest PlayBollyGame APK today and enjoy exciting
+              games, referral rewards, cashback offers, and exclusive
+              promotional campaigns.
+            </p>
+
+            <a
+              href={DOWNLOAD_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-8 inline-flex items-center gap-3 rounded-xl bg-white px-10 py-4 font-bold text-green-600 shadow-lg transition hover:scale-105"
+            >
+              <FaDownload />
+              Download Bollygame
+            </a>
+
+          </div>
 
         </div>
 
