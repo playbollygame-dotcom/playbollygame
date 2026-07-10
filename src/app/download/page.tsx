@@ -33,18 +33,16 @@ export default function DownloadPage() {
   className="mt-8 rounded-3xl border-4 border-red-500"
   style={{ minHeight: "300px" }}
 >
-  <Image
-    src="/download-banner.webp"
-    alt="Download Banner"
-    width={1200}
-    height={500}
-    priority
-    style={{
-      width: "100%",
-      height: "auto",
-      display: "block",
-    }}
-  />
+  <img
+  src="/download-banner.webp"
+  alt="Download Banner"
+  style={{
+    width: "100%",
+    height: "auto",
+    display: "block",
+    border: "5px solid red",
+  }}
+/>
 </div>
           <h1 className="mt-8 text-5xl font-black leading-tight lg:text-6xl">
             Download PlayBollyGame APK
