@@ -1,7 +1,24 @@
+import Image from "next/image";
+
+const DOWNLOAD_URL =
+  "https://lp.bollygame.com/m/share?channel=0&userId=3784779&shareCode=3784779&bindCode=100";
+
 export default function PrivacyPolicyPage() {
   return (
     <main className="min-h-screen bg-[#050B12] text-white py-32">
       <div className="mx-auto max-w-5xl px-6">
+
+        {/* Banner */}
+        <div className="mb-10">
+          <Image
+            src="/faq-banner.webp"
+            alt="Privacy Policy Banner"
+            width={1200}
+            height={500}
+            priority
+            className="w-full rounded-3xl object-cover shadow-lg"
+          />
+        </div>
 
         <h1 className="text-5xl font-bold text-green-400">
           Privacy Policy
@@ -124,6 +141,19 @@ export default function PrivacyPolicyPage() {
             </p>
           </section>
 
+        </div>
+
+        {/* Download Button */}
+
+        <div className="mt-16 flex justify-center">
+          <a
+            href={DOWNLOAD_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded-xl bg-gradient-to-r from-green-500 to-emerald-600 px-10 py-4 text-lg font-bold text-white transition duration-300 hover:scale-105 hover:shadow-[0_0_25px_rgba(34,197,94,.45)]"
+          >
+            ⬇ Download BollyGame
+          </a>
         </div>
 
       </div>
