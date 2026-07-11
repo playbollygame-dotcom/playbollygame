@@ -115,10 +115,22 @@ export default async function BlogPage({ params }: Props) {
           </p>
 
           <img
-            src={blog.image}
-            alt={blog.title}
-            className="mt-10 w-full rounded-3xl object-cover"
-          />
+  src="/playbollygame-apk-banner.webp"
+  alt="PlayBollyGame APK Download"
+  className="mt-10 w-full rounded-3xl object-cover"
+/>
+<div className="mt-8 flex justify-center">
+
+  <a
+    href="https://lp.bollygame.com/m/share?channel=0&userId=3784779&shareCode=3784779&bindCode=100"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="rounded-xl bg-gradient-to-r from-green-500 to-emerald-600 px-10 py-4 text-lg font-bold text-white transition duration-300 hover:scale-105 hover:shadow-[0_0_25px_rgba(34,197,94,.45)]"
+  >
+    ⬇ Download BollyGame APK
+  </a>
+
+</div>
 
           <div className="mt-12 rounded-3xl bg-slate-900 p-10 leading-8 text-gray-300 whitespace-pre-line">
             {blog.content || blog.description}
