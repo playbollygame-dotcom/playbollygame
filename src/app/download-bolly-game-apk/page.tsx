@@ -1,5 +1,5 @@
 import { FaDownload } from "react-icons/fa";
-
+import ExploreMore from "@/components/ExploreMore";
 const DOWNLOAD_URL =
   "https://lp.bollygame.com/m/share?channel=0&userId=3784779&shareCode=3784779&bindCode=100";
 
@@ -203,7 +203,7 @@ export default function DownloadBollyGamePage() {
             </a>
 
           </div>
-
+<ExploreMore />
         </div>
 
       </div>

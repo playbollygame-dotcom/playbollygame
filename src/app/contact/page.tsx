@@ -1,5 +1,5 @@
 "use client";
-
+import ExploreMore from "@/components/ExploreMore";
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
 import { FaDownload, FaEnvelope } from "react-icons/fa";
@@ -222,9 +222,8 @@ export default function ContactPage() {
             madad chahiye, toh hume email karein. Hum aapki madad karne ke liye
             hamesha taiyaar hain.
           </p>
-
         </div>
-
+<ExploreMore />
       </div>
 
     </main>

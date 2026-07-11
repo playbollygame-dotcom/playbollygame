@@ -1,4 +1,5 @@
 "use client";
+import ExploreMore from "@/components/ExploreMore";
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Navbar from "../components/layout/Navbar";
@@ -76,6 +77,7 @@ export default function Home() {
 
         {/* Download */}
         <DownloadSection />
+        <ExploreMore />
       </main>
 
       <Footer />

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import ExploreMore from "@/components/ExploreMore";
 import Image from "next/image";
 import {
   FaDownload,
@@ -464,7 +465,7 @@ export default function DownloadPage() {
           </p>
 
         </section>
-
+<ExploreMore />
       </div>
     </main>
   );
