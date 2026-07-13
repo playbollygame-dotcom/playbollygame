@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -41,7 +42,7 @@ export const metadata: Metadata = {
     "Bonus Guide",
     "Referral Bonus",
     "Welcome Bonus",
-    "Bollygame Blogs"
+    "Bollygame Blogs",
   ],
 
   authors: [
@@ -91,6 +92,21 @@ export const metadata: Metadata = {
   },
 };
 
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "PlayBollyGame",
+  url: "https://www.playbollygame.com",
+  logo: "https://www.playbollygame.com/icon.png",
+};
+
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "PlayBollyGame",
+  url: "https://www.playbollygame.com",
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -101,33 +117,28 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <script
-  type="application/ld+json"
-  dangerouslySetInnerHTML={{
-    __html: JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      name: "PlayBollyGame",
-      url: "https://www.playbollygame.com",
-      logo: "https://www.playbollygame.com/icon.png",
-      sameAs: [],
-    }),
-  }}
-/>
-
-<script
-  type="application/ld+json"
-  dangerouslySetInnerHTML={{
-    __html: JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      name: "PlayBollyGame",
-      url: "https://www.playbollygame.com",
-    }),
-  }}
-/>
       <body className="min-h-full flex flex-col">
+
+        <Script
+          id="organization-schema"
+          type="application/ld+json"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(organizationSchema),
+          }}
+        />
+
+        <Script
+          id="website-schema"
+          type="application/ld+json"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(websiteSchema),
+          }}
+        />
+
         {children}
+
       </body>
     </html>
   );
