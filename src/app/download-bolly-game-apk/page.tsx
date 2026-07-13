@@ -1,5 +1,51 @@
 import { FaDownload } from "react-icons/fa";
+import type { Metadata } from "next";
 import ExploreMore from "@/components/ExploreMore";
+
+export const metadata: Metadata = {
+  title: "Download PlayBollyGame APK (2026) | Official Latest Version",
+
+  description:
+    "Download the latest PlayBollyGame APK (2026) safely. Learn how to install the official APK, claim welcome bonuses, referral rewards, cashback offers, and enjoy exciting games.",
+
+  keywords: [
+    "PlayBollyGame APK",
+    "PlayBollyGame Download",
+    "Download PlayBollyGame",
+    "PlayBollyGame 2026",
+    "BollyGame APK",
+    "Bolly Game Download",
+    "Official APK",
+    "APK Download",
+    "Latest Version",
+    "Android APK",
+  ],
+
+  alternates: {
+    canonical: "https://www.playbollygame.com/download-bolly-game-apk",
+  },
+
+  openGraph: {
+    title: "Download PlayBollyGame APK (2026)",
+    description:
+      "Download the official PlayBollyGame APK and start playing exciting games with welcome bonuses and referral rewards.",
+    url: "https://www.playbollygame.com/download-bolly-game-apk",
+    type: "website",
+    images: [
+      {
+        url: "/download-banner.webp",
+        width: 1200,
+        height: 630,
+        alt: "Download PlayBollyGame APK",
+      },
+    ],
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
 const DOWNLOAD_URL =
   "https://lp.bollygame.com/m/share?channel=0&userId=3784779&shareCode=3784779&bindCode=100";
 

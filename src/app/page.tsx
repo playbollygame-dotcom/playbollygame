@@ -77,7 +77,7 @@ export default function Home() {
 
         {/* Download */}
         <DownloadSection />
-        <ExploreMore />
+        
       </main>
 
       <Footer />

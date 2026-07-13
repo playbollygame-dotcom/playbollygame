@@ -101,6 +101,31 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
+      <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      name: "PlayBollyGame",
+      url: "https://www.playbollygame.com",
+      logo: "https://www.playbollygame.com/icon.png",
+      sameAs: [],
+    }),
+  }}
+/>
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      name: "PlayBollyGame",
+      url: "https://www.playbollygame.com",
+    }),
+  }}
+/>
       <body className="min-h-full flex flex-col">
         {children}
       </body>

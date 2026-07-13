@@ -1,5 +1,48 @@
 import Image from "next/image";
+import type { Metadata } from "next";
 import ExploreMore from "@/components/ExploreMore";
+
+export const metadata: Metadata = {
+  title: "Privacy Policy | PlayBollyGame (2026)",
+
+  description:
+    "Read the official PlayBollyGame Privacy Policy to understand how we collect, use, and protect your information while using our website and services.",
+
+  keywords: [
+    "PlayBollyGame Privacy Policy",
+    "Privacy Policy",
+    "PlayBollyGame",
+    "BollyGame",
+    "User Privacy",
+    "Data Protection",
+    "Website Policy",
+  ],
+
+  alternates: {
+    canonical: "https://www.playbollygame.com/privacy-policy",
+  },
+
+  openGraph: {
+    title: "Privacy Policy | PlayBollyGame (2026)",
+    description:
+      "Learn how PlayBollyGame collects, stores, and protects your information through our official Privacy Policy.",
+    url: "https://www.playbollygame.com/privacy-policy",
+    type: "website",
+    images: [
+      {
+        url: "/faq-banner.webp",
+        width: 1200,
+        height: 630,
+        alt: "PlayBollyGame Privacy Policy",
+      },
+    ],
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
 
 const DOWNLOAD_URL =
   "https://lp.bollygame.com/m/share?channel=0&userId=3784779&shareCode=3784779&bindCode=100";

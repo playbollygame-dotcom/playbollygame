@@ -1,6 +1,53 @@
 import Image from "next/image";
+import type { Metadata } from "next";
 import { FaDownload } from "react-icons/fa";
 import ExploreMore from "@/components/ExploreMore";
+
+export const metadata: Metadata = {
+  title: "PlayBollyGame Games (2026) | Play Popular Games",
+
+  description:
+    "Explore exciting games on PlayBollyGame including Teen Patti, Dragon vs Tiger, Color Prediction, Lucky Spin, and more. Download the latest PlayBollyGame APK.",
+
+  keywords: [
+    "PlayBollyGame Games",
+    "PlayBollyGame",
+    "PlayBollyGame APK",
+    "PlayBollyGame 2026",
+    "Teen Patti",
+    "Dragon vs Tiger",
+    "Color Prediction",
+    "Lucky Spin",
+    "Card Games",
+    "Online Games",
+    "Gaming India",
+  ],
+
+  alternates: {
+    canonical: "https://www.playbollygame.com/games",
+  },
+
+  openGraph: {
+    title: "PlayBollyGame Games (2026)",
+    description:
+      "Discover the latest PlayBollyGame games including Teen Patti, Dragon vs Tiger, Color Prediction, and more.",
+    url: "https://www.playbollygame.com/games",
+    type: "website",
+    images: [
+      {
+        url: "/games-banner.webp",
+        width: 1200,
+        height: 630,
+        alt: "PlayBollyGame Games",
+      },
+    ],
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
 
 const DOWNLOAD_URL =
   "https://lp.bollygame.com/m/share?channel=0&userId=3784779&shareCode=3784779&bindCode=100";
