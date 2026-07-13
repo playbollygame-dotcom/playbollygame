@@ -15,17 +15,7 @@ const categories = [
   "Bonus",
   "Rewards",
   "Referral",
-  "Security",
-  "Updates",
-  "Events",
-  "Tips",
-  "Android",
-  "Account",
-  "Features",
-  "Comparison",
-  "Privacy",
-  "Performance",
-  "Troubleshooting",
+  "Download",
   "FAQ",
 ];
 
