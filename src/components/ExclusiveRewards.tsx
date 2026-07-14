@@ -35,7 +35,7 @@ export default function ExclusiveRewards() {
 
         <div className="text-center">
 
-          <span className="rounded-full bg-green-500/20 px-5 py-2 text-green-400">
+          <span className="rounded-full bg-red-600/20 px-5 py-2 text-red-500">
             Rewards
           </span>
 
@@ -55,10 +55,10 @@ export default function ExclusiveRewards() {
 
             <div
               key={reward.title}
-              className="rounded-3xl border border-slate-800 bg-slate-900 p-8 transition duration-300 hover:-translate-y-2 hover:border-green-500 hover:shadow-[0_0_25px_rgba(34,197,94,.35)]"
+              className="rounded-3xl border border-slate-800 bg-slate-900 p-8 transition duration-300 hover:-translate-y-2 hover:border-red-600 hover:shadow-[0_0_25px_rgba(34,197,94,.35)]"
             >
 
-              <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-green-500 text-3xl text-white">
+              <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-red-600 text-3xl text-white">
                 {reward.icon}
               </div>
 

@@ -20,7 +20,7 @@ export default function Footer() {
 
           <div>
 
-            <h2 className="text-3xl font-bold text-green-400">
+            <h2 className="text-3xl font-bold text-red-500">
               PlayBollyGame
             </h2>
 
@@ -33,7 +33,7 @@ export default function Footer() {
               href={DOWNLOAD_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-6 inline-block rounded-xl bg-green-500 px-6 py-3 font-semibold hover:bg-green-600 transition"
+              className="mt-6 inline-block rounded-xl bg-red-600 px-6 py-3 font-semibold hover:bg-red-700 transition"
             >
               Download Bollygame
             </a>
@@ -84,13 +84,13 @@ export default function Footer() {
 
             <div className="flex gap-4 text-2xl">
 
-              <FaFacebookF className="cursor-pointer hover:text-green-400" />
+              <FaFacebookF className="cursor-pointer hover:text-red-500" />
 
-              <FaInstagram className="cursor-pointer hover:text-green-400" />
+              <FaInstagram className="cursor-pointer hover:text-red-500" />
 
-              <FaTelegramPlane className="cursor-pointer hover:text-green-400" />
+              <FaTelegramPlane className="cursor-pointer hover:text-red-500" />
 
-              <FaYoutube className="cursor-pointer hover:text-green-400" />
+              <FaYoutube className="cursor-pointer hover:text-red-500" />
 
             </div>
 

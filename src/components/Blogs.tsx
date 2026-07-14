@@ -58,25 +58,27 @@ export default function Blogs({ showAll = false }: BlogsProps) {
 
         <div className="text-center">
 
-          <span className="rounded-full bg-green-500/20 px-5 py-2 text-green-400">
+          <span className="rounded-full bg-red-600/20 px-5 py-2 text-red-500">
             Latest Articles
           </span>
 
           <h2 className="mt-6 text-5xl font-black">
             Latest Blogs
           </h2>
+          <div className="mx-auto mt-4 h-1 w-24 rounded-full bg-yellow-400"></div>
 
-          <p className="mt-5 text-gray-400">
-            Read PlayBollyGame guides, rewards and updates.
-          </p>
+      <p className="mx-auto mt-6 max-w-3xl text-lg text-gray-400">
+  Discover APK guides, bonus offers, FAQs, referral rewards,
+  download tutorials, and the latest PlayBollyGame updates.
+</p>
 
         </div>
 
         <div className="mx-auto mt-10 max-w-xl">
 
-          <div className="flex items-center rounded-2xl border border-slate-700 bg-slate-900 px-5">
+        <div className="flex items-center rounded-3xl border border-slate-700 bg-[#111827] px-5 shadow-lg">
 
-            <FaSearch className="text-green-400" />
+            <FaSearch className="text-red-500" />
 
             <input
               type="text"
@@ -97,10 +99,10 @@ export default function Blogs({ showAll = false }: BlogsProps) {
             <button
               key={category}
               onClick={() => setSelectedCategory(category)}
-              className={`rounded-full px-5 py-2 transition ${
+            className={`rounded-full px-6 py-3 font-semibold transition-all duration-300 ${
                 selectedCategory === category
-                  ? "bg-green-500 text-white"
-                  : "bg-slate-900 text-gray-400 hover:bg-green-500 hover:text-white"
+                  ? "bg-red-600 text-white"
+                  : "bg-slate-900 text-gray-400 hover:bg-red-600 hover:text-white"
               }`}
             >
               {category}
@@ -116,7 +118,7 @@ export default function Blogs({ showAll = false }: BlogsProps) {
 
             <article
               key={blog.id}
-              className="group overflow-hidden rounded-3xl border border-slate-800 bg-slate-900 transition duration-300 hover:-translate-y-2 hover:border-green-500 hover:shadow-[0_0_30px_rgba(34,197,94,.3)]"
+              className="group overflow-hidden rounded-3xl border border-slate-800 bg-slate-900 transition duration-300 hover:-translate-y-2 hover:border-red-600 hover:shadow-[0_0_30px_rgba(34,197,94,.3)]"
             >
 
               <img
@@ -127,7 +129,7 @@ export default function Blogs({ showAll = false }: BlogsProps) {
 
               <div className="p-6">
 
-                <span className="rounded-full bg-green-500/20 px-3 py-1 text-sm text-green-400">
+                <span className="rounded-full bg-red-500/20 px-4 py-2 text-sm font-semibold text-red-400">
                   {blog.category}
                 </span>
 
@@ -136,7 +138,7 @@ export default function Blogs({ showAll = false }: BlogsProps) {
                   {blog.date}
                 </div>
 
-                <h3 className="mt-4 text-2xl font-bold">
+          <h3 className="mt-4 text-2xl font-black leading-snug text-white">
                   {blog.title}
                 </h3>
 
@@ -146,8 +148,7 @@ export default function Blogs({ showAll = false }: BlogsProps) {
 
                 <Link
                   href={`/blogs/${blog.slug}`}
-                  className="mt-6 inline-flex items-center gap-2 text-green-400 hover:text-green-300"
-                >
+                 className="mt-6 inline-flex items-center gap-2 font-semibold text-red-500 transition hover:gap-3 hover:text-red-400">
                   Read More
                   <FaArrowRight />
                 </Link>
@@ -170,7 +171,7 @@ export default function Blogs({ showAll = false }: BlogsProps) {
           <div className="mt-16 flex justify-center">
             <Link
               href="/blogs"
-              className="rounded-xl bg-green-500 px-8 py-4 text-lg font-semibold text-white transition hover:bg-green-600"
+              className="rounded-xl bg-red-600 px-8 py-4 text-lg font-semibold text-white transition hover:bg-red-700"
             >
               View All Blogs →
             </Link>

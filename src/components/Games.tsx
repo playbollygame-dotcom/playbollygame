@@ -72,7 +72,7 @@ export default function Games() {
 
             <SwiperSlide key={game.name}>
 
-              <div className="overflow-hidden rounded-3xl border border-slate-800 bg-slate-900 transition hover:border-green-500">
+              <div className="overflow-hidden rounded-3xl border border-slate-800 bg-slate-900 transition hover:border-red-600">
 
                 <div className="flex h-56 items-center justify-center bg-gradient-to-br from-green-500 to-emerald-700">
 
@@ -86,7 +86,7 @@ export default function Games() {
 
                 <div className="p-6">
 
-                  <span className="rounded-full bg-green-500/20 px-3 py-1 text-sm text-green-400">
+                  <span className="rounded-full bg-red-600/20 px-3 py-1 text-sm text-red-500">
                     {game.tag}
                   </span>
 
@@ -94,7 +94,7 @@ export default function Games() {
                     {game.name}
                   </h3>
 
-                  <button className="mt-6 w-full rounded-xl bg-green-500 py-3 hover:bg-green-600">
+                  <button className="mt-6 w-full rounded-xl bg-red-600 py-3 hover:bg-red-700">
                     Play Now
                   </button>
 

@@ -44,14 +44,14 @@ export default function Stats() {
 
               <div
                 key={item.title}
-                className="rounded-3xl border border-slate-800 bg-slate-900 p-8 text-center transition hover:border-green-500 hover:shadow-[0_0_25px_rgba(34,197,94,.3)]"
+                className="rounded-3xl border border-slate-800 bg-slate-900 p-8 text-center transition hover:border-red-600 hover:shadow-[0_0_25px_rgba(34,197,94,.3)]"
               >
 
-                <div className="mb-6 flex justify-center text-5xl text-green-400">
+                <div className="mb-6 flex justify-center text-5xl text-red-500">
                   {item.icon}
                 </div>
 
-                <h2 className="text-4xl font-black text-green-400">
+                <h2 className="text-4xl font-black text-red-500">
 
                   <CountUp
                     end={item.number}

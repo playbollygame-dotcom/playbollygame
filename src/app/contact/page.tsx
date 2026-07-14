@@ -77,7 +77,7 @@ export default function ContactPage() {
 
         <div className="text-center">
 
-          <p className="uppercase tracking-[6px] text-green-400 font-semibold">
+          <p className="uppercase tracking-[6px] text-red-500 font-semibold">
             Contact
           </p>
 
@@ -108,7 +108,7 @@ export default function ContactPage() {
               value={form.user_name}
               onChange={handleChange}
               required
-              className="rounded-xl border border-slate-700 bg-slate-900 p-4 outline-none focus:border-green-500"
+              className="rounded-xl border border-slate-700 bg-slate-900 p-4 outline-none focus:border-red-600"
             />
 
             <input
@@ -118,7 +118,7 @@ export default function ContactPage() {
               value={form.user_email}
               onChange={handleChange}
               required
-              className="rounded-xl border border-slate-700 bg-slate-900 p-4 outline-none focus:border-green-500"
+              className="rounded-xl border border-slate-700 bg-slate-900 p-4 outline-none focus:border-red-600"
             />
 
             <textarea
@@ -128,13 +128,13 @@ export default function ContactPage() {
               value={form.message}
               onChange={handleChange}
               required
-              className="rounded-xl border border-slate-700 bg-slate-900 p-4 outline-none focus:border-green-500"
+              className="rounded-xl border border-slate-700 bg-slate-900 p-4 outline-none focus:border-red-600"
             />
 
             <button
               type="submit"
               disabled={loading}
-              className="rounded-xl bg-green-500 py-4 font-bold transition hover:bg-green-600 disabled:opacity-60"
+              className="rounded-xl bg-red-600 py-4 font-bold transition hover:bg-red-700 disabled:opacity-60"
             >
               {loading ? "Sending..." : "Send Message"}
             </button>
@@ -143,7 +143,7 @@ export default function ContactPage() {
               <p
                 className={`text-center font-semibold ${
                   status.startsWith("✅")
-                    ? "text-green-400"
+                    ? "text-red-500"
                     : "text-red-400"
                 }`}
               >
@@ -161,7 +161,7 @@ export default function ContactPage() {
 
           <div className="flex items-center gap-4">
 
-            <div className="rounded-full bg-green-500 p-4">
+            <div className="rounded-full bg-red-600 p-4">
               <FaEnvelope size={20} />
             </div>
 
@@ -183,7 +183,7 @@ export default function ContactPage() {
 
                 {/* Download Section */}
 
-        <div className="mt-16 rounded-3xl border border-green-500/20 bg-gradient-to-r from-[#081018] to-[#0B1622] p-10 text-center">
+        <div className="mt-16 rounded-3xl border border-red-600/20 bg-gradient-to-r from-[#081018] to-[#0B1622] p-10 text-center">
 
           <h2 className="text-4xl font-black text-white">
             Download the Best Bolly Game!
@@ -200,7 +200,7 @@ export default function ContactPage() {
             href={DOWNLOAD_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-8 inline-flex items-center gap-3 rounded-xl bg-green-500 px-10 py-4 font-bold text-white shadow-lg transition-all duration-300 hover:scale-105 hover:bg-green-600"
+            className="mt-8 inline-flex items-center gap-3 rounded-xl bg-red-600 px-10 py-4 font-bold text-white shadow-lg transition-all duration-300 hover:scale-105 hover:bg-red-700"
           >
             <FaDownload />
             Download Bolly Game Now

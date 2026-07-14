@@ -25,9 +25,8 @@ export default function DownloadPage() {
 
         {/* Hero */}
 
-        <section className="rounded-3xl border border-green-500/20 bg-gradient-to-br from-green-500/20 to-slate-900 p-10 lg:p-16">
-
-          <div className="inline-flex rounded-full bg-green-500/20 px-5 py-2 font-semibold text-green-400">
+        <section className="relative overflow-hidden rounded-3xl border border-red-600/30 bg-gradient-to-br from-[#2B0000] via-[#4A0000] to-[#050B12] p-10 lg:p-16 shadow-[0_0_50px_rgba(220,38,38,.25)]">
+          <div className="inline-flex rounded-full bg-red-600/20 px-5 py-2 font-semibold text-red-500">
             Official Download Center
           </div>
 <div
@@ -53,7 +52,7 @@ export default function DownloadPage() {
             Jaise hi aap website ke Download Tab par click karte hain,
             aap is highly secure aur fast-loading interface par pahunch jaate hain.
             Yeh dedicated download page khas taur par aapko
-            <span className="font-bold text-green-400">
+            <span className="font-bold text-red-500">
               {" "}
               PlayBollyGame App{" "}
             </span>
@@ -67,7 +66,7 @@ export default function DownloadPage() {
               href={DOWNLOAD_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center gap-3 rounded-2xl bg-green-500 px-8 py-5 text-lg font-bold transition hover:bg-green-600"
+              className="flex items-center justify-center gap-3 rounded-2xl bg-red-600 px-8 py-5 text-lg font-bold transition hover:bg-red-700"
             >
               <FaDownload />
               OPTION 1 : DOWNLOAD OFFICIAL APK
@@ -77,7 +76,7 @@ export default function DownloadPage() {
               href={DOWNLOAD_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center gap-3 rounded-2xl border border-green-500 px-8 py-5 text-lg font-bold text-green-400 transition hover:bg-green-500 hover:text-white"
+              className="flex items-center justify-center gap-3 rounded-2xl border border-red-600 px-8 py-5 text-lg font-bold text-red-500 transition hover:bg-red-600 hover:text-white"
             >
               <FaDownload />
               OPTION 2 : MIRROR SERVER DOWNLOAD
@@ -106,9 +105,9 @@ export default function DownloadPage() {
 
           <div className="mt-14 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
 
-            <div className="rounded-3xl bg-slate-900 p-8 transition hover:-translate-y-2 hover:border hover:border-green-500">
+            <div className="rounded-3xl bg-slate-900 p-8 transition hover:-translate-y-2 hover:border hover:border-red-600">
 
-              <FaBolt className="text-5xl text-green-400" />
+              <FaBolt className="text-5xl text-red-500" />
 
               <h3 className="mt-6 text-2xl font-bold">
                 Smooth Gameplay
@@ -121,9 +120,9 @@ export default function DownloadPage() {
 
             </div>
 
-            <div className="rounded-3xl bg-slate-900 p-8 transition hover:-translate-y-2 hover:border hover:border-green-500">
+            <div className="rounded-3xl bg-slate-900 p-8 transition hover:-translate-y-2 hover:border hover:border-red-600">
 
-              <FaShieldAlt className="text-5xl text-green-400" />
+              <FaShieldAlt className="text-5xl text-red-500" />
 
               <h3 className="mt-6 text-2xl font-bold">
                 Advanced Security
@@ -136,9 +135,9 @@ export default function DownloadPage() {
 
             </div>
 
-            <div className="rounded-3xl bg-slate-900 p-8 transition hover:-translate-y-2 hover:border hover:border-green-500">
+            <div className="rounded-3xl bg-slate-900 p-8 transition hover:-translate-y-2 hover:border hover:border-red-600">
 
-              <FaBell className="text-5xl text-green-400" />
+              <FaBell className="text-5xl text-red-500" />
 
               <h3 className="mt-6 text-2xl font-bold">
                 Real-Time Alerts
@@ -151,9 +150,9 @@ export default function DownloadPage() {
 
             </div>
 
-            <div className="rounded-3xl bg-slate-900 p-8 transition hover:-translate-y-2 hover:border hover:border-green-500">
+            <div className="rounded-3xl bg-slate-900 p-8 transition hover:-translate-y-2 hover:border hover:border-red-600">
 
-              <FaMobileAlt className="text-5xl text-green-400" />
+              <FaMobileAlt className="text-5xl text-red-500" />
 
               <h3 className="mt-6 text-2xl font-bold">
                 Optimized App
@@ -186,7 +185,7 @@ export default function DownloadPage() {
             <div className="mt-12 grid gap-8 md:grid-cols-2">
 
               <div className="rounded-2xl border border-slate-700 p-8">
-                <div className="flex h-14 w-14 items-center justify-center rounded-full bg-green-500 text-2xl font-black">
+                <div className="flex h-14 w-14 items-center justify-center rounded-full bg-red-600 text-2xl font-black">
                   1
                 </div>
 
@@ -201,7 +200,7 @@ export default function DownloadPage() {
               </div>
 
               <div className="rounded-2xl border border-slate-700 p-8">
-                <div className="flex h-14 w-14 items-center justify-center rounded-full bg-green-500 text-2xl font-black">
+                <div className="flex h-14 w-14 items-center justify-center rounded-full bg-red-600 text-2xl font-black">
                   2
                 </div>
 
@@ -216,7 +215,7 @@ export default function DownloadPage() {
               </div>
 
               <div className="rounded-2xl border border-slate-700 p-8">
-                <div className="flex h-14 w-14 items-center justify-center rounded-full bg-green-500 text-2xl font-black">
+                <div className="flex h-14 w-14 items-center justify-center rounded-full bg-red-600 text-2xl font-black">
                   3
                 </div>
 
@@ -230,7 +229,7 @@ export default function DownloadPage() {
               </div>
 
               <div className="rounded-2xl border border-slate-700 p-8">
-                <div className="flex h-14 w-14 items-center justify-center rounded-full bg-green-500 text-2xl font-black">
+                <div className="flex h-14 w-14 items-center justify-center rounded-full bg-red-600 text-2xl font-black">
                   4
                 </div>
 
@@ -271,9 +270,9 @@ export default function DownloadPage() {
 
             {/* Official */}
 
-            <div className="rounded-3xl border border-green-500 bg-slate-900 p-10">
+            <div className="rounded-3xl border border-red-600 bg-slate-900 p-10">
 
-              <div className="inline-flex rounded-full bg-green-500/20 px-4 py-2 font-bold text-green-400">
+              <div className="inline-flex rounded-full bg-red-600/20 px-4 py-2 font-bold text-red-500">
                 Official Server
               </div>
 
@@ -290,7 +289,7 @@ export default function DownloadPage() {
                 href={DOWNLOAD_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-10 flex items-center justify-center gap-3 rounded-2xl bg-green-500 py-5 text-xl font-bold transition hover:bg-green-600"
+                className="mt-10 flex items-center justify-center gap-3 rounded-2xl bg-red-600 py-5 text-xl font-bold transition hover:bg-red-700"
               >
                 <FaDownload />
                 DOWNLOAD NOW
@@ -319,7 +318,7 @@ export default function DownloadPage() {
                 href={DOWNLOAD_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-10 flex items-center justify-center gap-3 rounded-2xl border border-green-500 py-5 text-xl font-bold text-green-400 transition hover:bg-green-500 hover:text-white"
+                className="mt-10 flex items-center justify-center gap-3 rounded-2xl border border-red-600 py-5 text-xl font-bold text-red-500 transition hover:bg-red-600 hover:text-white"
               >
                 <FaDownload />
                 MIRROR DOWNLOAD
@@ -413,8 +412,7 @@ export default function DownloadPage() {
 
         {/* CTA */}
 
-        <section className="mt-24 rounded-3xl bg-gradient-to-r from-green-600 to-green-500 p-12 text-center">
-
+        <section className="relative mt-24 overflow-hidden rounded-3xl bg-gradient-to-r from-[#2B0000] via-[#590000] to-[#990000] p-12 text-center shadow-[0_0_40px_rgba(220,38,38,.25)]">
           <h2 className="text-4xl font-black">
             Ready To Play?
           </h2>
@@ -431,7 +429,7 @@ export default function DownloadPage() {
               href={DOWNLOAD_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-2xl bg-white px-10 py-5 text-lg font-bold text-green-600 transition hover:scale-105"
+              className="rounded-2xl bg-gradient-to-r from-red-600 via-red-700 to-[#990000] px-10 py-5 text-lg font-bold text-white transition-all duration-300 hover:scale-105 hover:shadow-[0_0_35px_rgba(220,38,38,.5)] active:scale-95"
             >
               Download Official APK
             </a>
@@ -440,8 +438,7 @@ export default function DownloadPage() {
               href={DOWNLOAD_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-2xl border-2 border-white px-10 py-5 text-lg font-bold text-white transition hover:bg-white hover:text-green-600"
-            >
+             className="rounded-2xl border-2 border-red-500 px-10 py-5 text-lg font-bold text-white transition-all duration-300 hover:bg-red-600 hover:border-red-600 hover:shadow-[0_0_25px_rgba(220,38,38,.45)]">
               Mirror Download
             </a>
 

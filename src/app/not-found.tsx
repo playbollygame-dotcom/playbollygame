@@ -16,7 +16,7 @@ export default function NotFound() {
 
         <Link
           href="/"
-          className="mt-8 inline-block rounded-lg bg-green-500 px-6 py-3"
+          className="mt-8 inline-block rounded-lg bg-red-600 px-6 py-3"
         >
           Go Home
         </Link>

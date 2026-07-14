@@ -57,7 +57,7 @@ export default function PrivacyPolicyPage() {
 
         <div className="text-center">
 
-          <p className="uppercase tracking-[6px] text-green-400 font-semibold">
+          <p className="uppercase tracking-[6px] text-red-500 font-semibold">
             Privacy Policy
           </p>
 
@@ -96,7 +96,7 @@ export default function PrivacyPolicyPage() {
             href={DOWNLOAD_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-xl bg-gradient-to-r from-green-500 to-emerald-600 px-10 py-4 text-lg font-bold text-white transition duration-300 hover:scale-105 hover:shadow-[0_0_25px_rgba(34,197,94,.45)]"
+            className="rounded-xl bg-gradient-to-r from-red-600 to-red-700 px-10 py-4 text-lg font-bold text-white transition duration-300 hover:scale-105 hover:shadow-[0_0_25px_rgba(34,197,94,.45)]"
           >
             ⬇ Download BollyGame
           </a>
@@ -267,7 +267,7 @@ export default function PrivacyPolicyPage() {
               If you have any questions, suggestions, or concerns regarding
               this Privacy Policy, feel free to contact us through our Contact
               page or email us at
-              <span className="font-semibold text-green-400">
+              <span className="font-semibold text-red-500">
                 {" "}playbollygame@gmail.com
               </span>.
             </p>
@@ -276,7 +276,7 @@ export default function PrivacyPolicyPage() {
 
           {/* Bottom Download Section */}
 
-          <div className="mt-20 rounded-3xl bg-gradient-to-r from-green-500 to-emerald-600 p-10 text-center">
+          <div className="mt-20 rounded-3xl bg-gradient-to-r from-red-600 to-red-700 p-10 text-center">
 
             <h2 className="text-4xl font-black text-white">
               Download PlayBollyGame

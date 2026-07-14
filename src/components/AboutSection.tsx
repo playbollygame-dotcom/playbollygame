@@ -11,7 +11,7 @@ export default function AboutSection() {
 
         <div className="text-center">
 
-          <span className="rounded-full border border-green-500 bg-green-500/10 px-5 py-2 text-green-400">
+          <span className="rounded-full border border-red-600 bg-red-600/10 px-5 py-2 text-red-500">
             About PlayBollyGame
           </span>
 
@@ -32,7 +32,7 @@ export default function AboutSection() {
 
           <div className="rounded-3xl bg-slate-900 p-8">
 
-            <h3 className="text-2xl font-bold text-green-400">
+            <h3 className="text-2xl font-bold text-red-500">
               Fast Gameplay
             </h3>
 
@@ -45,7 +45,7 @@ export default function AboutSection() {
 
           <div className="rounded-3xl bg-slate-900 p-8">
 
-            <h3 className="text-2xl font-bold text-green-400">
+            <h3 className="text-2xl font-bold text-red-500">
               Daily Rewards
             </h3>
 
@@ -58,7 +58,7 @@ export default function AboutSection() {
 
           <div className="rounded-3xl bg-slate-900 p-8">
 
-            <h3 className="text-2xl font-bold text-green-400">
+            <h3 className="text-2xl font-bold text-red-500">
               Secure Platform
             </h3>
 
@@ -71,7 +71,7 @@ export default function AboutSection() {
 
           <div className="rounded-3xl bg-slate-900 p-8">
 
-            <h3 className="text-2xl font-bold text-green-400">
+            <h3 className="text-2xl font-bold text-red-500">
               User Friendly
             </h3>
 
@@ -90,7 +90,7 @@ export default function AboutSection() {
             href={DOWNLOAD_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-xl bg-green-500 px-10 py-4 font-bold text-white transition hover:bg-green-600"
+            className="rounded-xl bg-red-600 px-10 py-4 font-bold text-white transition hover:bg-red-700"
           >
             Download BollyGame
           </a>

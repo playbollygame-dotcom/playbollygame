@@ -122,7 +122,7 @@ export default async function BlogPage({ params }: Props) {
             href={DOWNLOAD_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-xl bg-gradient-to-r from-green-500 to-emerald-600 px-10 py-4 text-lg font-bold text-white transition duration-300 hover:scale-105 hover:shadow-[0_0_25px_rgba(34,197,94,.45)]"
+            className="rounded-xl bg-gradient-to-r from-red-600 to-red-700 px-10 py-4 text-lg font-bold text-white transition duration-300 hover:scale-105 hover:shadow-[0_0_25px_rgba(34,197,94,.45)]"
           >
             ⬇ DOWNLOAD BOLLYGAME APK
           </a>
@@ -163,7 +163,7 @@ export default async function BlogPage({ params }: Props) {
             href={DOWNLOAD_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-xl bg-gradient-to-r from-green-500 to-emerald-600 px-10 py-4 text-lg font-bold text-white transition duration-300 hover:scale-105 hover:shadow-[0_0_25px_rgba(34,197,94,.45)]"
+            className="rounded-xl bg-gradient-to-r from-red-600 to-red-700 px-10 py-4 text-lg font-bold text-white transition duration-300 hover:scale-105 hover:shadow-[0_0_25px_rgba(34,197,94,.45)]"
           >
             ⬇ DOWNLOAD BOLLYGAME APK
           </a>
@@ -184,7 +184,7 @@ export default async function BlogPage({ params }: Props) {
               <Link
                 key={item.id}
                 href={`/blogs/${item.slug}`}
-                className="rounded-2xl border border-slate-800 bg-slate-900 p-6 transition duration-300 hover:-translate-y-1 hover:border-green-500 hover:shadow-[0_0_20px_rgba(34,197,94,.25)]"
+                className="rounded-2xl border border-slate-800 bg-slate-900 p-6 transition duration-300 hover:-translate-y-1 hover:border-red-600 hover:shadow-[0_0_20px_rgba(34,197,94,.25)]"
               >
 
                 <h3 className="text-xl font-bold text-white">
@@ -195,7 +195,7 @@ export default async function BlogPage({ params }: Props) {
                   {item.description}
                 </p>
 
-                <span className="mt-5 inline-block font-semibold text-green-400">
+                <span className="mt-5 inline-block font-semibold text-red-500">
                   Read More →
                 </span>
 

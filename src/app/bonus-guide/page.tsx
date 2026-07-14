@@ -60,7 +60,7 @@ export default function BonusGuidePage() {
 
         <div className="text-center">
 
-          <p className="uppercase tracking-[6px] text-green-400 font-semibold">
+          <p className="uppercase tracking-[6px] text-red-500 font-semibold">
             Bonus Guide
           </p>
 
@@ -96,7 +96,7 @@ export default function BonusGuidePage() {
             href={DOWNLOAD_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-3 rounded-xl bg-green-500 px-10 py-4 font-bold text-white shadow-lg transition hover:scale-105 hover:bg-green-600"
+            className="flex items-center gap-3 rounded-xl bg-red-600 px-10 py-4 font-bold text-white shadow-lg transition hover:scale-105 hover:bg-red-700"
           >
             <FaDownload />
             Download Bollygame
@@ -120,8 +120,8 @@ export default function BonusGuidePage() {
 
           <div className="grid gap-8 md:grid-cols-3">
 
-            <div className="rounded-2xl border border-green-500/20 bg-[#081018] p-6">
-              <h3 className="text-2xl font-bold text-green-400">
+            <div className="rounded-2xl border border-red-600/20 bg-[#081018] p-6">
+              <h3 className="text-2xl font-bold text-red-500">
                 🎁 ₹200 Free Cash
               </h3>
 
@@ -133,8 +133,8 @@ export default function BonusGuidePage() {
               </p>
             </div>
 
-            <div className="rounded-2xl border border-green-500/20 bg-[#081018] p-6">
-              <h3 className="text-2xl font-bold text-green-400">
+            <div className="rounded-2xl border border-red-600/20 bg-[#081018] p-6">
+              <h3 className="text-2xl font-bold text-red-500">
                 💰 200% First Deposit Bonus
               </h3>
 
@@ -145,8 +145,8 @@ export default function BonusGuidePage() {
               </p>
             </div>
 
-            <div className="rounded-2xl border border-green-500/20 bg-[#081018] p-6">
-              <h3 className="text-2xl font-bold text-green-400">
+            <div className="rounded-2xl border border-red-600/20 bg-[#081018] p-6">
+              <h3 className="text-2xl font-bold text-red-500">
                 👥 Refer & Earn
               </h3>
 
@@ -161,7 +161,7 @@ export default function BonusGuidePage() {
 
           {/* Secure Download */}
 
-          <div className="mt-16 rounded-3xl border border-green-500/20 bg-[#081018] p-8">
+          <div className="mt-16 rounded-3xl border border-red-600/20 bg-[#081018] p-8">
 
             <h2 className="text-3xl font-black text-white">
               Secure Installation Guide
@@ -179,7 +179,7 @@ export default function BonusGuidePage() {
                 href={DOWNLOAD_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex-1 rounded-xl bg-green-500 px-8 py-4 text-center font-bold text-white transition hover:bg-green-600"
+                className="flex-1 rounded-xl bg-red-600 px-8 py-4 text-center font-bold text-white transition hover:bg-red-700"
               >
                 ⚡ Download Bollygame APK
               </a>
@@ -188,7 +188,7 @@ export default function BonusGuidePage() {
                 href={DOWNLOAD_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex-1 rounded-xl border border-green-500 px-8 py-4 text-center font-bold text-green-400 transition hover:bg-green-500 hover:text-white"
+                className="flex-1 rounded-xl border border-red-600 px-8 py-4 text-center font-bold text-red-500 transition hover:bg-red-600 hover:text-white"
               >
                 🚀 Alternative Download
               </a>
@@ -218,7 +218,7 @@ export default function BonusGuidePage() {
                 href={DOWNLOAD_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 rounded-xl bg-green-500 px-10 py-4 font-bold text-white shadow-lg transition hover:scale-105 hover:bg-green-600"
+                className="flex items-center gap-3 rounded-xl bg-red-600 px-10 py-4 font-bold text-white shadow-lg transition hover:scale-105 hover:bg-red-700"
               >
                 <FaDownload />
                 Download Bollygame

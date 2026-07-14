@@ -62,7 +62,7 @@ export default function GamesPage() {
 
         <div className="text-center">
 
-          <p className="uppercase tracking-[6px] text-green-400 font-semibold">
+          <p className="uppercase tracking-[6px] text-red-500 font-semibold">
             PlayBollyGame
           </p>
 
@@ -101,7 +101,7 @@ export default function GamesPage() {
             href={DOWNLOAD_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-3 rounded-xl bg-gradient-to-r from-green-500 to-emerald-600 px-10 py-4 text-lg font-bold text-white transition hover:scale-105"
+            className="flex items-center gap-3 rounded-xl bg-gradient-to-r from-red-600 to-red-700 px-10 py-4 text-lg font-bold text-white transition hover:scale-105"
           >
             <FaDownload />
             Download BollyGame
@@ -124,10 +124,10 @@ export default function GamesPage() {
 
           <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
 
-            <div className="rounded-3xl border border-slate-800 bg-[#081018] p-8 transition hover:border-green-500">
+            <div className="rounded-3xl border border-slate-800 bg-[#081018] p-8 transition hover:border-red-600">
               <div className="text-5xl">🃏</div>
 
-              <h3 className="mt-6 text-2xl font-bold text-green-400">
+              <h3 className="mt-6 text-2xl font-bold text-red-500">
                 Teen Patti
               </h3>
 
@@ -137,10 +137,10 @@ export default function GamesPage() {
               </p>
             </div>
 
-            <div className="rounded-3xl border border-slate-800 bg-[#081018] p-8 transition hover:border-green-500">
+            <div className="rounded-3xl border border-slate-800 bg-[#081018] p-8 transition hover:border-red-600">
               <div className="text-5xl">🐉</div>
 
-              <h3 className="mt-6 text-2xl font-bold text-green-400">
+              <h3 className="mt-6 text-2xl font-bold text-red-500">
                 Dragon vs Tiger
               </h3>
 
@@ -150,10 +150,10 @@ export default function GamesPage() {
               </p>
             </div>
 
-            <div className="rounded-3xl border border-slate-800 bg-[#081018] p-8 transition hover:border-green-500">
+            <div className="rounded-3xl border border-slate-800 bg-[#081018] p-8 transition hover:border-red-600">
               <div className="text-5xl">🎨</div>
 
-              <h3 className="mt-6 text-2xl font-bold text-green-400">
+              <h3 className="mt-6 text-2xl font-bold text-red-500">
                 Color Prediction
               </h3>
 
@@ -163,10 +163,10 @@ export default function GamesPage() {
               </p>
             </div>
 
-            <div className="rounded-3xl border border-slate-800 bg-[#081018] p-8 transition hover:border-green-500">
+            <div className="rounded-3xl border border-slate-800 bg-[#081018] p-8 transition hover:border-red-600">
               <div className="text-5xl">🎰</div>
 
-              <h3 className="mt-6 text-2xl font-bold text-green-400">
+              <h3 className="mt-6 text-2xl font-bold text-red-500">
                 Lucky Spin
               </h3>
 
@@ -176,10 +176,10 @@ export default function GamesPage() {
               </p>
             </div>
 
-            <div className="rounded-3xl border border-slate-800 bg-[#081018] p-8 transition hover:border-green-500">
+            <div className="rounded-3xl border border-slate-800 bg-[#081018] p-8 transition hover:border-red-600">
               <div className="text-5xl">♠️</div>
 
-              <h3 className="mt-6 text-2xl font-bold text-green-400">
+              <h3 className="mt-6 text-2xl font-bold text-red-500">
                 Card Games
               </h3>
 
@@ -189,10 +189,10 @@ export default function GamesPage() {
               </p>
             </div>
 
-            <div className="rounded-3xl border border-slate-800 bg-[#081018] p-8 transition hover:border-green-500">
+            <div className="rounded-3xl border border-slate-800 bg-[#081018] p-8 transition hover:border-red-600">
               <div className="text-5xl">💰</div>
 
-              <h3 className="mt-6 text-2xl font-bold text-green-400">
+              <h3 className="mt-6 text-2xl font-bold text-red-500">
                 Rewards & Promotions
               </h3>
 
@@ -223,7 +223,7 @@ export default function GamesPage() {
           <div className="mt-12 grid gap-6 md:grid-cols-2">
 
             <div className="rounded-2xl border border-slate-700 bg-[#0D1722] p-6">
-              <h3 className="text-2xl font-bold text-green-400">
+              <h3 className="text-2xl font-bold text-red-500">
                 ⚡ Fast Gameplay
               </h3>
 
@@ -234,7 +234,7 @@ export default function GamesPage() {
             </div>
 
             <div className="rounded-2xl border border-slate-700 bg-[#0D1722] p-6">
-              <h3 className="text-2xl font-bold text-green-400">
+              <h3 className="text-2xl font-bold text-red-500">
                 🎁 Daily Rewards
               </h3>
 
@@ -250,13 +250,13 @@ export default function GamesPage() {
 
         {/* Bottom Download Section */}
 
-        <div className="mt-20 rounded-3xl bg-gradient-to-r from-green-500 to-emerald-600 p-10 text-center">
+        <div className="mt-20 rounded-3xl bg-gradient-to-r from-red-600 to-red-700 p-10 text-center">
 
           <h2 className="text-4xl font-black text-white">
             Ready to Start Playing?
           </h2>
 
-          <p className="mx-auto mt-5 max-w-3xl text-lg leading-8 text-green-100">
+          <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 tracking-wide text-gray-200">
             Download the latest PlayBollyGame APK today and enjoy exciting
             games, daily rewards, referral bonuses, cashback offers,
             and exclusive promotions.
@@ -266,7 +266,7 @@ export default function GamesPage() {
             href={DOWNLOAD_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-8 inline-flex items-center gap-3 rounded-xl bg-white px-10 py-4 font-bold text-green-600 shadow-lg transition hover:scale-105"
+            className="mt-8 inline-flex items-center gap-3 rounded-2xl bg-gradient-to-r from-red-600 via-red-700 to-[#990000] px-10 py-5 text-lg font-bold text-white shadow-[0_0_30px_rgba(220,38,38,.45)] transition-all duration-300 hover:scale-105 hover:shadow-[0_0_40px_rgba(220,38,38,.6)] active:scale-95"
           >
             <FaDownload />
             Download BollyGame

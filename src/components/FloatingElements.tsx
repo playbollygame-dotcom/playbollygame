@@ -2,7 +2,7 @@ export default function FloatingElements() {
   return (
     <>
       {/* Green Glow */}
-      <div className="absolute -left-32 top-10 h-72 w-72 rounded-full bg-green-500/20 blur-[120px]" />
+      <div className="absolute -left-32 top-10 h-72 w-72 rounded-full bg-red-600/20 blur-[120px]" />
 
       {/* Blue Glow */}
       <div className="absolute right-0 top-40 h-72 w-72 rounded-full bg-cyan-500/20 blur-[120px]" />

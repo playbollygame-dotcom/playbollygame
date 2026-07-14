@@ -87,7 +87,7 @@ export default function FAQ() {
 
         <div className="mt-10 rounded-3xl border border-slate-800 bg-slate-900 p-8">
 
-          <h3 className="text-3xl font-bold text-green-400">
+          <h3 className="text-3xl font-bold text-red-500">
             Why PlayBollyGame?
           </h3>
 
@@ -112,7 +112,7 @@ export default function FAQ() {
           {faqData.map((faq, index) => (
             <div
               key={index}
-              className="rounded-2xl border border-slate-800 bg-slate-900 transition hover:border-green-500"
+              className="rounded-2xl border border-slate-800 bg-slate-900 transition hover:border-red-600"
             >
               <button
                 onClick={() => setOpen(open === index ? null : index)}
@@ -123,9 +123,9 @@ export default function FAQ() {
                 </span>
 
                 {open === index ? (
-                  <FaChevronUp className="text-green-400" />
+                  <FaChevronUp className="text-red-500" />
                 ) : (
-                  <FaChevronDown className="text-green-400" />
+                  <FaChevronDown className="text-red-500" />
                 )}
               </button>
 

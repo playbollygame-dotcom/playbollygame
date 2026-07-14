@@ -25,7 +25,7 @@ export default function HowToDownload() {
               className="flex items-center gap-6 rounded-2xl bg-slate-900 p-6"
             >
 
-              <div className="flex h-14 w-14 items-center justify-center rounded-full bg-green-500 text-xl font-bold">
+              <div className="flex h-14 w-14 items-center justify-center rounded-full bg-red-600 text-xl font-bold">
                 {index + 1}
               </div>
 

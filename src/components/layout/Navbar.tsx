@@ -40,7 +40,7 @@ export default function Navbar() {
 
           <div>
             <h1 className="text-2xl font-black text-white">
-              Play<span className="text-green-400">BollyGame</span>
+              Play<span className="text-red-500">BollyGame</span>
             </h1>
 
             <p className="text-xs text-gray-400">
@@ -58,8 +58,8 @@ export default function Navbar() {
               href={link.href}
               className={`font-medium transition-all duration-300 ${
                 pathname === link.href
-                  ? "text-green-400"
-                  : "text-gray-300 hover:text-green-400"
+                  ? "text-red-500"
+                  : "text-gray-300 hover:text-red-500"
               }`}
             >
               {link.name}
@@ -71,7 +71,7 @@ export default function Navbar() {
             href={DOWNLOAD_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="ml-2 flex items-center gap-2 rounded-xl bg-green-500 px-5 py-3 font-semibold text-white shadow-lg transition-all duration-300 hover:scale-105 hover:bg-green-600"
+            className="rounded-xl bg-gradient-to-r from-red-600 to-red-700 px-6 py-3 font-bold text-white transition-all duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(220,38,38,.45)]"
           >
             <FaDownload />
             Download Bollygame
@@ -101,7 +101,7 @@ export default function Navbar() {
                 onClick={() => setMenuOpen(false)}
                 className={`rounded-lg px-4 py-3 transition ${
                   pathname === link.href
-                    ? "bg-green-500 text-white"
+                    ? "bg-red-600 text-white"
                     : "text-gray-300 hover:bg-slate-800"
                 }`}
               >
@@ -115,7 +115,7 @@ export default function Navbar() {
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setMenuOpen(false)}
-              className="mt-4 flex items-center justify-center gap-2 rounded-xl bg-green-500 py-3 font-semibold text-white shadow-lg transition-all duration-300 hover:bg-green-600"
+              className="mt-4 flex items-center justify-center gap-2 rounded-xl bg-red-600 py-3 font-semibold text-white shadow-lg transition-all duration-300 hover:bg-red-700"
             >
               <FaDownload />
               Download Bollygame

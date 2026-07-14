@@ -16,13 +16,13 @@ export default function HomePage() {
 
           <div className="max-w-7xl mx-auto px-6 py-16">
 
-            <p className="uppercase tracking-[6px] text-green-400 font-semibold">
+            <p className="uppercase tracking-[6px] text-red-500 font-semibold">
               Home
             </p>
 
             <h1 className="mt-4 text-5xl md:text-6xl font-black text-white leading-tight">
               BollyGame
-              <span className="block text-green-400">
+              <span className="block text-red-500">
                 India's Trusted Gaming Platform
               </span>
             </h1>
@@ -36,7 +36,7 @@ export default function HomePage() {
             <div className="mt-10">
               <Link
                 href="/download"
-                className="inline-flex rounded-xl bg-green-500 px-8 py-4 text-lg font-bold text-white hover:bg-green-600 transition"
+                className="inline-flex rounded-xl bg-red-600 px-8 py-4 text-lg font-bold text-white hover:bg-red-700 transition"
               >
                 Download Bollygame
               </Link>
@@ -100,7 +100,7 @@ export default function HomePage() {
 
                   <Link
                     href="/download"
-                    className="inline-flex rounded-xl bg-green-500 px-8 py-4 font-bold text-white hover:bg-green-600 transition"
+                    className="inline-flex rounded-xl bg-red-600 px-8 py-4 font-bold text-white hover:bg-red-700 transition"
                   >
                     Download BollyGame APK
                   </Link>
@@ -121,7 +121,7 @@ export default function HomePage() {
                 <div className="grid md:grid-cols-2 gap-5 mt-6">
 
                   <div className="rounded-2xl border border-slate-700 bg-[#0D1722] p-5">
-                    <h4 className="font-bold text-green-400 mb-2">
+                    <h4 className="font-bold text-red-500 mb-2">
                       🎁 Welcome Rewards
                     </h4>
                     <p className="text-gray-400">
@@ -130,7 +130,7 @@ export default function HomePage() {
                   </div>
 
                   <div className="rounded-2xl border border-slate-700 bg-[#0D1722] p-5">
-                    <h4 className="font-bold text-green-400 mb-2">
+                    <h4 className="font-bold text-red-500 mb-2">
                       💰 Daily Bonuses
                     </h4>
                     <p className="text-gray-400">
@@ -139,7 +139,7 @@ export default function HomePage() {
                   </div>
 
                   <div className="rounded-2xl border border-slate-700 bg-[#0D1722] p-5">
-                    <h4 className="font-bold text-green-400 mb-2">
+                    <h4 className="font-bold text-red-500 mb-2">
                       ⚡ Fast Transactions
                     </h4>
                     <p className="text-gray-400">
@@ -148,7 +148,7 @@ export default function HomePage() {
                   </div>
 
                   <div className="rounded-2xl border border-slate-700 bg-[#0D1722] p-5">
-                    <h4 className="font-bold text-green-400 mb-2">
+                    <h4 className="font-bold text-red-500 mb-2">
                       🔒 Secure Platform
                     </h4>
                     <p className="text-gray-400">
@@ -220,24 +220,27 @@ export default function HomePage() {
 
                 </ul>
 
-                <div className="rounded-3xl bg-gradient-to-r from-green-500 to-green-600 p-8 mt-12">
+                <div className="mt-12 rounded-3xl bg-gradient-to-r from-[#2B0000] via-[#590000] to-[#990000] p-8 shadow-[0_0_40px_rgba(220,38,38,.25)]">
 
-                  <h3 className="text-3xl font-bold text-white">
-                    Ready to Start?
-                  </h3>
+                 <h3 className="text-4xl font-black text-white">
+  Ready to Start?
+</h3>
 
-                  <p className="mt-4 text-green-100 text-lg">
-                    Download the latest BollyGame APK and enjoy exciting
-                    games, daily bonuses, cashback offers, and referral
-                    rewards.
-                  </p>
+<div className="mt-4 h-1 w-20 rounded-full bg-yellow-400"></div>
+
+<p className="mt-6 max-w-3xl text-lg leading-8 text-gray-200">
+  Download the latest <span className="font-semibold text-white">PlayBollyGame APK</span> and enjoy exciting games,
+  daily rewards, cashback offers, referral bonuses, secure gameplay,
+  and fast withdrawals.
+</p>
 
                   <Link
-                    href="/download"
-                    className="inline-flex mt-8 rounded-xl bg-white px-8 py-4 font-bold text-green-600 hover:bg-gray-100 transition"
-                  >
-                    Download Bollygame
-                  </Link>
+  href="/download"
+  className="mt-8 inline-flex items-center gap-3 rounded-2xl bg-gradient-to-r from-red-600 to-red-700 px-10 py-5 text-lg font-bold text-white transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(220,38,38,.45)]"
+>
+  ⬇ Download BollyGame
+</Link>
+                  
 
                 </div>
 
@@ -254,7 +257,7 @@ export default function HomePage() {
                 <div className="grid md:grid-cols-2 gap-5 mt-8">
 
                   <div className="rounded-2xl border border-slate-700 bg-[#0D1722] p-5">
-                    <h4 className="text-green-400 font-bold mb-2">
+                    <h4 className="text-red-500 font-bold mb-2">
                       👥 Invite Friends
                     </h4>
                     <p className="text-gray-400">
@@ -263,7 +266,7 @@ export default function HomePage() {
                   </div>
 
                   <div className="rounded-2xl border border-slate-700 bg-[#0D1722] p-5">
-                    <h4 className="text-green-400 font-bold mb-2">
+                    <h4 className="text-red-500 font-bold mb-2">
                       💸 Earn Rewards
                     </h4>
                     <p className="text-gray-400">
@@ -352,7 +355,7 @@ export default function HomePage() {
 
                 </div>
 
-                <div className="mt-16 rounded-3xl border border-green-500/30 bg-gradient-to-r from-[#0B1622] to-[#0F2232] p-10 text-center">
+                <div className="mt-16 rounded-3xl border border-red-600/30 bg-gradient-to-r from-[#0B1622] to-[#0F2232] p-10 text-center">
 
                   <h2 className="text-4xl font-black text-white">
                     Start Your Gaming Journey Today
@@ -366,7 +369,7 @@ export default function HomePage() {
 
                   <Link
                     href="/download"
-                    className="inline-flex mt-8 rounded-xl bg-green-500 px-10 py-4 text-lg font-bold text-white transition hover:bg-green-600"
+                    className="inline-flex mt-8 rounded-xl bg-red-600 px-10 py-4 text-lg font-bold text-white transition hover:bg-red-700"
                   >
                     Download BollyGame APK
                   </Link>

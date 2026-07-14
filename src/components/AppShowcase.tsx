@@ -11,7 +11,7 @@ export default function AppShowcase() {
 
         <div>
 
-          <span className="rounded-full bg-green-500/20 px-4 py-2 text-green-400">
+          <span className="rounded-full bg-red-600/20 px-4 py-2 text-red-500">
             Latest APK
           </span>
 
@@ -40,7 +40,7 @@ export default function AppShowcase() {
             href={DOWNLOAD_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-10 inline-block rounded-xl bg-green-500 px-8 py-4 text-lg font-bold hover:bg-green-600 transition"
+            className="mt-10 inline-block rounded-xl bg-red-600 px-8 py-4 text-lg font-bold hover:bg-red-700 transition"
           >
           Download Bollygame
           </a>
@@ -51,7 +51,7 @@ export default function AppShowcase() {
 
         <div className="flex justify-center">
 
-          <div className="h-[520px] w-[260px] rounded-[40px] border-4 border-green-500 bg-gradient-to-b from-slate-800 to-slate-950 shadow-[0_0_60px_rgba(34,197,94,.35)]">
+          <div className="h-[520px] w-[260px] rounded-[40px] border-4 border-red-600 bg-gradient-to-b from-slate-800 to-slate-950 shadow-[0_0_60px_rgba(34,197,94,.35)]">
 
             <div className="flex h-full items-center justify-center text-center">
 

@@ -43,10 +43,10 @@ export default function AnimatedStats() {
 
           <div
             key={item.title}
-            className="rounded-3xl border border-slate-800 bg-slate-900 p-10 text-center hover:border-green-500 transition"
+            className="rounded-3xl border border-slate-800 bg-slate-900 p-10 text-center hover:border-red-600 transition"
           >
 
-            <h2 className="text-5xl font-black text-green-400">
+            <h2 className="text-5xl font-black text-red-500">
 
               {inView && (
                 <CountUp

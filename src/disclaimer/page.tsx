@@ -3,7 +3,7 @@ export default function DisclaimerPage() {
     <main className="min-h-screen bg-[#050B12] text-white py-32">
       <div className="mx-auto max-w-5xl px-6">
 
-        <h1 className="text-5xl font-bold text-green-400">
+        <h1 className="text-5xl font-bold text-red-500">
           Disclaimer
         </h1>
 
