@@ -1,129 +1,259 @@
 "use client";
-
+import GoogleTranslate from "@/components/GoogleTranslate";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { FaBars, FaTimes, FaDownload } from "react-icons/fa";
 
+import { useLanguage } from "@/context/LanguageContext";
+import { translations } from "@/data/translations";
+
 const DOWNLOAD_URL =
   "https://lp.bollygame.com/m/share?channel=0&userId=3784779&shareCode=3784779&bindCode=100";
-
-const links = [
- { name: "Home", href: "/home" },
-  { name: "Download", href: "/download" },
-  { name: "Games", href: "/games" },
-  { name: "Blogs", href: "/blogs" },
-  { name: "Bonus Guide", href: "/bonus-guide" },
-  { name: "About", href: "/about" },
-  { name: "Contact", href: "/contact" },
-];
 
 export default function Navbar() {
   const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
 
+  const { language, setLanguage } = useLanguage();
+  const t = translations[language];
+
+  const links = [
+    { name: t.home, href: "/home" },
+    { name: t.download, href: "/download" },
+    { name: "Games", href: "/games" },
+    { name: t.blogs, href: "/blogs" },
+    { name: t.bonus, href: "/bonus-guide" },
+    { name: t.about, href: "/about" },
+    { name: t.contact, href: "/contact" },
+  ];
+
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 border-b border-white/10 bg-[#050B12]/80 backdrop-blur-xl">
-      <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6">
+    <header className="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-[#050B12]/90 backdrop-blur-xl">
 
-        {/* Logo */}
-        <Link href="/home" className="flex items-center gap-3">
-          <Image
-            src="/logo.png"
-            alt="PlayBollyGame Logo"
-            width={52}
-            height={52}
-            priority
-            className="rounded-xl object-contain"
-          />
+      <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-8">
 
-          <div>
-            <h1 className="text-2xl font-black text-white">
-              Play<span className="text-red-500">BollyGame</span>
+        {/* Left */}
+
+        <div className="flex w-[260px] items-center">
+
+          <Link
+            href="/home"
+            className="flex items-center gap-3"
+          >
+
+            <Image
+              src="/logo.png"
+              alt="PlayBollyGame"
+              width={44}
+              height={44}
+              priority
+              className="rounded-xl"
+            />
+
+            <h1 className="whitespace-nowrap text-[26px] font-extrabold leading-none">
+
+              <span className="text-white">
+                Play
+              </span>
+
+              <span className="bg-gradient-to-r from-red-500 via-red-400 to-red-600 bg-clip-text text-transparent">
+                BollyGame
+              </span>
+
             </h1>
 
-            <p className="text-xs text-gray-400">
-              Gaming Platform
-            </p>
+          </Link>
+
+        </div>
+
+        {/* Center */}
+
+        <nav className="hidden flex-1 justify-center xl:flex">
+
+          <div className="flex items-center gap-8">
+            {links.map((link) => (
+
+
+  <Link
+    key={link.href}
+    href={link.href}
+    className={`group relative text-[15px] font-semibold tracking-wide transition-all duration-300 ${
+      pathname === link.href
+        ? "text-red-500"
+        : "text-gray-300 hover:text-white"
+    }`}
+  >
+
+    {link.name}
+
+    <span
+      className={`absolute -bottom-2 left-0 h-[2px] rounded-full bg-red-500 transition-all duration-300 ${
+        pathname === link.href
+          ? "w-full"
+          : "w-0 group-hover:w-full"
+      }`}
+    />
+
+  </Link>
+
+))}
+
           </div>
-        </Link>
 
-        {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center gap-8">
+        </nav>
 
-          {links.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className={`font-medium transition-all duration-300 ${
-                pathname === link.href
-                  ? "text-red-500"
-                  : "text-gray-300 hover:text-red-500"
+        {/* Right */}
+
+        <div className="hidden w-[300px] items-center justify-end gap-4 xl:flex">
+
+          {/* Language Switch */}
+
+          <div className="flex items-center rounded-full border border-red-500/20 bg-[#0B1622] p-1">
+
+            <button
+              onClick={() => setLanguage("en")}
+              className={`rounded-full px-4 py-2 text-sm font-semibold transition-all duration-300 ${
+                language === "en"
+                  ? "bg-gradient-to-r from-red-600 to-red-700 text-white"
+                  : "text-gray-400 hover:text-white"
               }`}
             >
-              {link.name}
-            </Link>
-          ))}
+              EN
+            </button>
+
+            <button
+              onClick={() => setLanguage("hi")}
+              className={`rounded-full px-4 py-2 text-sm font-semibold transition-all duration-300 ${
+                language === "hi"
+                  ? "bg-gradient-to-r from-red-600 to-red-700 text-white"
+                  : "text-gray-400 hover:text-white"
+              }`}
+            >
+              हिन्दी
+            </button>
+
+          </div>
 
           {/* Download Button */}
+
           <a
             href={DOWNLOAD_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-xl bg-gradient-to-r from-red-600 to-red-700 px-6 py-3 font-bold text-white transition-all duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(220,38,38,.45)]"
+            className="flex items-center gap-2 rounded-xl bg-gradient-to-r from-red-600 to-red-700 px-5 py-3 text-sm font-bold text-white transition-all duration-300 hover:scale-105 hover:shadow-[0_0_25px_rgba(220,38,38,.45)]"
           >
+
             <FaDownload />
-            Download Bollygame
+
+            {language === "en"
+              ? "Download APK"
+              : "APK डाउनलोड"}
+
           </a>
 
-        </nav>
+        </div>
 
-        {/* Mobile Menu Button */}
+        {/* Mobile Button */}
+
         <button
           onClick={() => setMenuOpen(!menuOpen)}
-          className="text-2xl text-white md:hidden"
+          className="flex h-11 w-11 items-center justify-center rounded-xl border border-red-500/20 bg-[#0B1622] text-white transition-all duration-300 hover:bg-red-600 xl:hidden"
         >
-          {menuOpen ? <FaTimes /> : <FaBars />}
+          {menuOpen ? <FaTimes size={20} /> : <FaBars size={20} />}
         </button>
 
       </div>
+            {/* Mobile Menu */}
 
-      {/* Mobile Menu */}
       {menuOpen && (
-        <div className="border-t border-slate-800 bg-[#081018] md:hidden">
-          <nav className="flex flex-col gap-2 p-6">
+
+        <div className="border-t border-white/10 bg-[#081018]/95 backdrop-blur-xl xl:hidden">
+
+          <nav className="flex flex-col gap-4 p-6">
 
             {links.map((link) => (
+
               <Link
                 key={link.href}
                 href={link.href}
                 onClick={() => setMenuOpen(false)}
-                className={`rounded-lg px-4 py-3 transition ${
+                className={`flex items-center justify-between rounded-2xl border px-5 py-4 transition-all duration-300 ${
                   pathname === link.href
-                    ? "bg-red-600 text-white"
-                    : "text-gray-300 hover:bg-slate-800"
+                    ? "border-red-600 bg-gradient-to-r from-red-600 to-red-700 text-white"
+                    : "border-slate-700 bg-[#0D1722] text-gray-300 hover:border-red-500 hover:bg-[#132130]"
                 }`}
               >
-                {link.name}
+
+                <span className="font-semibold">
+                  {link.name}
+                </span>
+
+                <span className="text-red-400">
+                  →
+                </span>
+
               </Link>
+
             ))}
 
-            {/* Mobile Download Button */}
+            {/* Mobile Language */}
+
+            <div className="mt-2 flex justify-center">
+
+              <div className="flex items-center rounded-full border border-red-500/20 bg-[#0B1622] p-1">
+
+                <button
+                  onClick={() => setLanguage("en")}
+                  className={`rounded-full px-5 py-2 text-sm font-semibold transition ${
+                    language === "en"
+                      ? "bg-red-600 text-white"
+                      : "text-gray-400"
+                  }`}
+                >
+                  EN
+                </button>
+
+                <button
+                  onClick={() => setLanguage("hi")}
+                  className={`rounded-full px-5 py-2 text-sm font-semibold transition ${
+                    language === "hi"
+                      ? "bg-red-600 text-white"
+                      : "text-gray-400"
+                  }`}
+                >
+                  हिन्दी
+                </button>
+
+              </div>
+
+            </div>
+
+            {/* Mobile Download */}
+
             <a
               href={DOWNLOAD_URL}
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setMenuOpen(false)}
-              className="mt-4 flex items-center justify-center gap-2 rounded-xl bg-red-600 py-3 font-semibold text-white shadow-lg transition-all duration-300 hover:bg-red-700"
+              className="mt-3 flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-red-600 to-red-700 py-4 font-bold text-white shadow-lg transition hover:scale-[1.02]"
             >
+
               <FaDownload />
-              Download Bollygame
+
+              {language === "en"
+                ? "Download APK"
+                : "APK डाउनलोड"}
+
             </a>
 
           </nav>
+
         </div>
+
       )}
+
     </header>
   );
 }
