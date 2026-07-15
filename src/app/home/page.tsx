@@ -6,44 +6,13 @@ import Link from "next/link";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/Footer";
 import ExploreMore from "@/components/ExploreMore";
-
 import { useLanguage } from "@/context/LanguageContext";
+import { useTranslation } from "@/hooks/useTranslation";
 
 export default function HomePage() {
-  const { language } = useLanguage();
-
-  const t =
-    language === "en"
-      ? {
-          home: "Home",
-
-          heroTitle: "BollyGame",
-
-          heroSubtitle: "India's Trusted Gaming Platform",
-
-          heroDescription:
-            "Explore exciting games, daily rewards, referral bonuses, cashback offers, and exclusive promotions on one of India's fastest-growing gaming platforms.",
-
-          download: "Download BollyGame",
-
-          articleTitle:
-            "BollyGame – India's Trusted Real Cash Gaming Platform with Exciting Rewards and Daily Bonuses",
-        }
-      : {
-          home: "होम",
-
-          heroTitle: "बॉलीगेम",
-
-          heroSubtitle: "भारत का भरोसेमंद गेमिंग प्लेटफॉर्म",
-
-          heroDescription:
-            "रोमांचक गेम्स, दैनिक रिवॉर्ड्स, रेफरल बोनस, कैशबैक ऑफर और एक्सक्लूसिव प्रमोशन का आनंद लें।",
-
-          download: "बॉलीगेम डाउनलोड करें",
-
-          articleTitle:
-            "बॉलीगेम – भारत का भरोसेमंद गेमिंग प्लेटफॉर्म जहाँ मिलते हैं शानदार बोनस और दैनिक रिवॉर्ड्स",
-        };
+  
+const { language } = useLanguage();
+const t = useTranslation();
 
   return (
     <>

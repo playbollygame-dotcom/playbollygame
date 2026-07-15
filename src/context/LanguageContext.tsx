@@ -29,6 +29,18 @@ export function LanguageProvider({
   const changeLanguage = (lang: Language) => {
     setLanguage(lang);
     localStorage.setItem("language", lang);
+
+    const interval = setInterval(() => {
+      const select = document.querySelector(
+        ".goog-te-combo"
+      ) as HTMLSelectElement | null;
+
+      if (select) {
+        select.value = lang === "hi" ? "hi" : "en";
+        select.dispatchEvent(new Event("change"));
+        clearInterval(interval);
+      }
+    }, 500);
   };
 
   return (

@@ -1,5 +1,4 @@
 "use client";
-import GoogleTranslate from "@/components/GoogleTranslate";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -19,15 +18,15 @@ export default function Navbar() {
   const { language, setLanguage } = useLanguage();
   const t = translations[language];
 
-  const links = [
-    { name: t.home, href: "/home" },
-    { name: t.download, href: "/download" },
-    { name: "Games", href: "/games" },
-    { name: t.blogs, href: "/blogs" },
-    { name: t.bonus, href: "/bonus-guide" },
-    { name: t.about, href: "/about" },
-    { name: t.contact, href: "/contact" },
-  ];
+const links = [
+  { name: t.home, href: "/home" },
+  { name: t.download, href: "/download" },
+  { name: t.games, href: "/games" },
+  { name: t.blogs, href: "/blogs" },
+  { name: t.bonus, href: "/bonus-guide" },
+  { name: t.about, href: "/about" },
+  { name: t.contact, href: "/contact" },
+];
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-[#050B12]/90 backdrop-blur-xl">
@@ -72,7 +71,7 @@ export default function Navbar() {
 
         <nav className="hidden flex-1 justify-center xl:flex">
 
-          <div className="flex items-center gap-8">
+         <div className="flex items-center gap-8">
             {links.map((link) => (
 
 
@@ -105,8 +104,7 @@ export default function Navbar() {
         </nav>
 
         {/* Right */}
-
-        <div className="hidden w-[300px] items-center justify-end gap-4 xl:flex">
+<div className="hidden w-[300px] items-center justify-end gap-3 xl:flex">
 
           {/* Language Switch */}
 
@@ -147,9 +145,7 @@ export default function Navbar() {
 
             <FaDownload />
 
-            {language === "en"
-              ? "Download APK"
-              : "APK डाउनलोड"}
+     {t.downloadAPK}
 
           </a>
 
@@ -242,9 +238,7 @@ export default function Navbar() {
 
               <FaDownload />
 
-              {language === "en"
-                ? "Download APK"
-                : "APK डाउनलोड"}
+              {t.downloadAPK}
 
             </a>
 

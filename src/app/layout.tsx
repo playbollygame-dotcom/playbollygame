@@ -56,11 +56,7 @@ export const metadata: Metadata = {
   creator: "PlayBollyGame",
   publisher: "PlayBollyGame",
 
-  icons: {
-    icon: "/icon.png",
-    shortcut: "/icon.png",
-    apple: "/icon.png",
-  },
+
 
   openGraph: {
     title: "PlayBollyGame (2026)",

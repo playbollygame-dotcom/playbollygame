@@ -13,28 +13,27 @@ declare global {
 export default function GoogleTranslate() {
   useEffect(() => {
     window.googleTranslateElementInit = () => {
-      new window.google.translate.TranslateElement(
-        {
-          pageLanguage: "en",
-          includedLanguages: "en,hi",
-          autoDisplay: false,
-        },
-        "google_translate_element"
-      );
+      if (window.google?.translate) {
+        new window.google.translate.TranslateElement(
+          {
+            pageLanguage: "en",
+            includedLanguages: "en,hi",
+            layout:
+              window.google.translate.TranslateElement.InlineLayout.SIMPLE,
+          },
+          "google_translate_element"
+        );
+      }
     };
   }, []);
 
   return (
     <>
       <Script
-        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+        src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
         strategy="afterInteractive"
       />
-
-      <div
-        id="google_translate_element"
-        style={{ display: "none" }}
-      />
+      <div id="google_translate_element"></div>
     </>
   );
 }

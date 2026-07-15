@@ -1,21 +1,38 @@
+import { navbar } from "@/translations/navbar";
+import { home } from "@/translations/home";
+import { about } from "@/translations/about";
+import { contact } from "@/translations/contact";
+import { download } from "@/translations/download";
+import { faq } from "@/translations/faq";
+import { footer } from "@/translations/footer";
+import { games } from "@/translations/games";
+import { blogs } from "@/translations/blogs";
+import { common } from "@/translations/common";
+
 export const translations = {
   en: {
-    home: "Home",
-    download: "Download",
-    blogs: "Blogs",
-    faq: "FAQ",
-    bonus: "Bonus Guide",
-    contact: "Contact",
-    about: "About",
+    ...navbar.en,
+    ...home.en,
+    ...about.en,
+    ...contact.en,
+    ...download.en,
+    ...faq.en,
+    ...footer.en,
+    ...games.en,
+    ...blogs.en,
+    ...common.en,
   },
 
   hi: {
-    home: "होम",
-    download: "डाउनलोड",
-    blogs: "ब्लॉग",
-    faq: "सामान्य प्रश्न",
-    bonus: "बोनस गाइड",
-    contact: "संपर्क",
-    about: "हमारे बारे में",
+    ...navbar.hi,
+    ...home.hi,
+    ...about.hi,
+    ...contact.hi,
+    ...download.hi,
+    ...faq.hi,
+    ...footer.hi,
+    ...games.hi,
+    ...blogs.hi,
+    ...common.hi,
   },
 };
