@@ -73,18 +73,6 @@ export default function FAQ() {
     <section className="bg-[#050B12] py-24 text-white">
       <div className="mx-auto max-w-5xl px-6">
 
-        <div className="text-center">
-
-          <h2 className="text-5xl font-black">
-            Frequently Asked Questions
-          </h2>
-
-          <p className="mt-5 text-lg text-gray-400">
-            Everything you need to know about PlayBollyGame.
-          </p>
-
-        </div>
-
         <div className="mt-10 rounded-3xl border border-slate-800 bg-slate-900 p-8">
 
           <h3 className="text-3xl font-bold text-red-500">
