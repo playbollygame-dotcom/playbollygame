@@ -1,22 +1,20 @@
-import { Metadata } from "next";
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 
 import FAQ from "@/components/FAQ";
 import ExploreMore from "@/components/ExploreMore";
 import { blogs } from "@/data/blogs";
+import { useTranslation } from "@/hooks/useTranslation";
 
-export const metadata: Metadata = {
-  title: "Frequently Asked Questions | PlayBollyGame",
-  description:
-    "Find answers to the most common questions about PlayBollyGame APK, bonuses, installation, account support, rewards, withdrawals and gameplay.",
-};
 
 const DOWNLOAD_URL =
   "https://lp.bollygame.com/m/share?channel=0&userId=3784779&shareCode=3784779&bindCode=100";
 
 export default function FAQPage() {
   const relatedBlogs = blogs.slice(0, 4);
+  const t = useTranslation();
 
   return (
     <main className="min-h-screen bg-[#050B12] py-28 text-white">
@@ -28,14 +26,11 @@ export default function FAQPage() {
         <div className="text-center">
 
           <h1 className="text-5xl font-black">
-            Frequently Asked Questions
+           {t.faqTitle}
           </h1>
 
           <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-gray-400">
-            Find answers to the most common questions about
-            PlayBollyGame APK, installation, welcome bonus,
-            rewards, withdrawals, referral program,
-            account support and more.
+           {t.faqDescription}
           </p>
 
         </div>
@@ -50,7 +45,7 @@ export default function FAQPage() {
             rel="noopener noreferrer"
             className="rounded-2xl bg-gradient-to-r from-red-600 via-red-700 to-[#8B0000] px-10 py-4 text-lg font-bold text-white transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(220,38,38,.45)]"
           >
-            ⬇ Download BollyGame APK
+           ⬇ {t.downloadAPK}
           </a>
 
         </div>
@@ -87,7 +82,7 @@ export default function FAQPage() {
             rel="noopener noreferrer"
             className="rounded-2xl bg-gradient-to-r from-red-600 via-red-700 to-[#8B0000] px-10 py-4 text-lg font-bold text-white transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(220,38,38,.45)]"
           >
-            ⬇ Download BollyGame APK
+            ⬇ {t.downloadAPK}
           </a>
 
         </div>
@@ -99,11 +94,11 @@ export default function FAQPage() {
           <div className="text-center">
 
             <h2 className="text-4xl font-black text-white">
-              Related Articles
+             {t.relatedArticles}
             </h2>
 
             <p className="mt-4 text-gray-400">
-              Explore more PlayBollyGame guides, APK tutorials and gaming tips.
+            {t.relatedDescription}
             </p>
 
           </div>
@@ -124,7 +119,7 @@ export default function FAQPage() {
                 </p>
 
                 <span className="mt-5 inline-flex items-center font-semibold text-red-500">
-                  Read More →
+                 {t.readMore} →
                 </span>
 
               </Link>

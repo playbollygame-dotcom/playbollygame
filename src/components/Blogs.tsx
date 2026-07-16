@@ -1,5 +1,5 @@
 "use client";
-
+import { useTranslation } from "@/hooks/useTranslation";
 import { useMemo, useState } from "react";
 import Link from "next/link";
 import { blogs } from "../data/blogs";
@@ -10,13 +10,34 @@ import {
 } from "react-icons/fa";
 
 const categories = [
-  "All",
-  "Guide",
-  "Bonus",
-  "Rewards",
-  "Referral",
-  "Download",
-  "FAQ",
+  {
+    value: "All",
+    labelKey: "all",
+  },
+  {
+    value: "Guide",
+    labelKey: "guide",
+  },
+  {
+    value: "Bonus",
+    labelKey: "bonus",
+  },
+  {
+    value: "Rewards",
+    labelKey: "rewards",
+  },
+  {
+    value: "Referral",
+    labelKey: "referral",
+  },
+  {
+    value: "Download",
+    labelKey: "download",
+  },
+  {
+    value: "FAQ",
+    labelKey: "faq",
+  },
 ];
 
 interface BlogsProps {
@@ -26,6 +47,7 @@ interface BlogsProps {
 export default function Blogs({ showAll = false }: BlogsProps) {
   const [search, setSearch] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("All");
+  const t = useTranslation();
 
   const filteredBlogs = useMemo(() => {
     return blogs.filter((blog) => {
@@ -59,17 +81,16 @@ export default function Blogs({ showAll = false }: BlogsProps) {
         <div className="text-center">
 
           <span className="rounded-full bg-red-600/20 px-5 py-2 text-red-500">
-            Latest Articles
+            {t.latestArticles}
           </span>
 
           <h2 className="mt-6 text-5xl font-black">
-            Latest Blogs
+           {t.latestBlogs}
           </h2>
           <div className="mx-auto mt-4 h-1 w-24 rounded-full bg-yellow-400"></div>
 
       <p className="mx-auto mt-6 max-w-3xl text-lg text-gray-400">
-  Discover APK guides, bonus offers, FAQs, referral rewards,
-  download tutorials, and the latest PlayBollyGame updates.
+  {t.blogDescription}
 </p>
 
         </div>
@@ -82,7 +103,7 @@ export default function Blogs({ showAll = false }: BlogsProps) {
 
             <input
               type="text"
-              placeholder="Search blogs..."
+              placeholder={t.searchBlogs}
               value={search}
               onChange={(e) => setSearch(e.target.value)}
               className="w-full bg-transparent px-4 py-4 outline-none"
@@ -97,15 +118,15 @@ export default function Blogs({ showAll = false }: BlogsProps) {
           {categories.map((category) => (
 
             <button
-              key={category}
-              onClick={() => setSelectedCategory(category)}
+             key={category.value}
+              onClick={() => setSelectedCategory(category.value)}
             className={`rounded-full px-6 py-3 font-semibold transition-all duration-300 ${
-                selectedCategory === category
+                selectedCategory === category.value
                   ? "bg-red-600 text-white"
                   : "bg-slate-900 text-gray-400 hover:bg-red-600 hover:text-white"
               }`}
             >
-              {category}
+             {t[category.labelKey as keyof typeof t]}
             </button>
 
           ))}
@@ -149,7 +170,7 @@ export default function Blogs({ showAll = false }: BlogsProps) {
                 <Link
                   href={`/blogs/${blog.slug}`}
                  className="mt-6 inline-flex items-center gap-2 font-semibold text-red-500 transition hover:gap-3 hover:text-red-400">
-                  Read More
+                 {t.readMore}
                   <FaArrowRight />
                 </Link>
 
@@ -163,7 +184,7 @@ export default function Blogs({ showAll = false }: BlogsProps) {
 
         {filteredBlogs.length === 0 && (
           <div className="mt-16 text-center text-gray-400">
-            No blogs found.
+            {t.noBlogs}
           </div>
         )}
 
@@ -173,7 +194,7 @@ export default function Blogs({ showAll = false }: BlogsProps) {
               href="/blogs"
               className="rounded-xl bg-red-600 px-8 py-4 text-lg font-semibold text-white transition hover:bg-red-700"
             >
-              View All Blogs →
+             {t.viewAll} →
             </Link>
           </div>
         )}

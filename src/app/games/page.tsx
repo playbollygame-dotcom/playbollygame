@@ -1,58 +1,14 @@
+"use client";
 import Image from "next/image";
-import type { Metadata } from "next";
 import { FaDownload } from "react-icons/fa";
 import ExploreMore from "@/components/ExploreMore";
-
-export const metadata: Metadata = {
-  title: "PlayBollyGame Games (2026) | Play Popular Games",
-
-  description:
-    "Explore exciting games on PlayBollyGame including Teen Patti, Dragon vs Tiger, Color Prediction, Lucky Spin, and more. Download the latest PlayBollyGame APK.",
-
-  keywords: [
-    "PlayBollyGame Games",
-    "PlayBollyGame",
-    "PlayBollyGame APK",
-    "PlayBollyGame 2026",
-    "Teen Patti",
-    "Dragon vs Tiger",
-    "Color Prediction",
-    "Lucky Spin",
-    "Card Games",
-    "Online Games",
-    "Gaming India",
-  ],
-
-  alternates: {
-    canonical: "https://www.playbollygame.com/games",
-  },
-
-  openGraph: {
-    title: "PlayBollyGame Games (2026)",
-    description:
-      "Discover the latest PlayBollyGame games including Teen Patti, Dragon vs Tiger, Color Prediction, and more.",
-    url: "https://www.playbollygame.com/games",
-    type: "website",
-    images: [
-      {
-        url: "/games-banner.webp",
-        width: 1200,
-        height: 630,
-        alt: "PlayBollyGame Games",
-      },
-    ],
-  },
-
-  robots: {
-    index: true,
-    follow: true,
-  },
-};
+import { useTranslation } from "@/hooks/useTranslation";
 
 const DOWNLOAD_URL =
   "https://lp.bollygame.com/m/share?channel=0&userId=3784779&shareCode=3784779&bindCode=100";
 
 export default function GamesPage() {
+  const t = useTranslation();
   return (
     <main className="min-h-screen bg-[#050B12] pt-28 pb-20 text-white">
 
@@ -63,17 +19,15 @@ export default function GamesPage() {
         <div className="text-center">
 
           <p className="uppercase tracking-[6px] text-red-500 font-semibold">
-            PlayBollyGame
+            {t.gamesBadge}
           </p>
 
           <h1 className="mt-4 text-5xl font-black">
-            Exciting Games Collection
+            {t.gamesTitle}
           </h1>
 
           <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-gray-400">
-            Explore the most popular games available on PlayBollyGame.
-            Enjoy exciting gameplay, daily rewards, referral bonuses,
-            promotional events, and a smooth gaming experience.
+            {t.gamesDescription}
           </p>
 
         </div>
@@ -104,7 +58,7 @@ export default function GamesPage() {
             className="flex items-center gap-3 rounded-xl bg-gradient-to-r from-red-600 to-red-700 px-10 py-4 text-lg font-bold text-white transition hover:scale-105"
           >
             <FaDownload />
-            Download BollyGame
+            {t.downloadAPK}
           </a>
 
         </div>
@@ -114,12 +68,11 @@ export default function GamesPage() {
         <div className="mt-20">
 
           <h2 className="text-center text-4xl font-black text-white">
-            Popular Games on PlayBollyGame
+            {t.popularGames}
           </h2>
 
           <p className="mx-auto mt-5 max-w-3xl text-center text-lg leading-8 text-gray-400">
-            PlayBollyGame offers a wide variety of exciting games for players
-            looking for fun, entertainment, and rewarding gameplay.
+           {t.popularGamesDesc}
           </p>
 
           <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
@@ -128,12 +81,11 @@ export default function GamesPage() {
               <div className="text-5xl">🃏</div>
 
               <h3 className="mt-6 text-2xl font-bold text-red-500">
-                Teen Patti
+                {t.teenPatti}
               </h3>
 
               <p className="mt-4 leading-8 text-gray-400">
-                One of India's most popular card games with exciting gameplay
-                and smooth user experience.
+                {t.teenPattiDesc}
               </p>
             </div>
 
@@ -141,12 +93,11 @@ export default function GamesPage() {
               <div className="text-5xl">🐉</div>
 
               <h3 className="mt-6 text-2xl font-bold text-red-500">
-                Dragon vs Tiger
+               {t.dragonTiger}
               </h3>
 
               <p className="mt-4 leading-8 text-gray-400">
-                Fast-paced gameplay with exciting rounds that many players
-                enjoy every day.
+                {t.dragonTigerDesc}
               </p>
             </div>
 
@@ -154,12 +105,11 @@ export default function GamesPage() {
               <div className="text-5xl">🎨</div>
 
               <h3 className="mt-6 text-2xl font-bold text-red-500">
-                Color Prediction
+                {t.colorPrediction}
               </h3>
 
               <p className="mt-4 leading-8 text-gray-400">
-                A simple and entertaining game category with an engaging
-                interface.
+             {t.colorPredictionDesc}
               </p>
             </div>
 
@@ -167,12 +117,11 @@ export default function GamesPage() {
               <div className="text-5xl">🎰</div>
 
               <h3 className="mt-6 text-2xl font-bold text-red-500">
-                Lucky Spin
+                {t.luckySpin}
               </h3>
 
               <p className="mt-4 leading-8 text-gray-400">
-                Spin the wheel and enjoy exciting rewards through promotional
-                events and offers.
+                {t.luckySpinDesc}
               </p>
             </div>
 
@@ -180,12 +129,11 @@ export default function GamesPage() {
               <div className="text-5xl">♠️</div>
 
               <h3 className="mt-6 text-2xl font-bold text-red-500">
-                Card Games
+               {t.cardGames}
               </h3>
 
               <p className="mt-4 leading-8 text-gray-400">
-                Discover multiple entertaining card game categories available
-                on the platform.
+             {t.cardGamesDesc}
               </p>
             </div>
 
@@ -193,12 +141,11 @@ export default function GamesPage() {
               <div className="text-5xl">💰</div>
 
               <h3 className="mt-6 text-2xl font-bold text-red-500">
-                Rewards & Promotions
+                {t.rewards}
               </h3>
 
               <p className="mt-4 leading-8 text-gray-400">
-                Explore welcome rewards, referral bonuses, cashback offers,
-                and seasonal campaigns.
+             {t.rewardsDesc}
               </p>
             </div>
 
@@ -211,36 +158,32 @@ export default function GamesPage() {
         <div className="mt-20 rounded-3xl border border-slate-800 bg-[#081018] p-10">
 
           <h2 className="text-center text-4xl font-black text-white">
-            Why Choose PlayBollyGame?
+       {t.whyChoose}
           </h2>
 
           <p className="mx-auto mt-6 max-w-4xl text-center text-lg leading-8 text-gray-400">
-            PlayBollyGame combines exciting games, a user-friendly interface,
-            attractive promotions, and secure gameplay to deliver a smooth
-            entertainment experience for players across India.
+            {t.whyChooseDesc}
           </p>
 
           <div className="mt-12 grid gap-6 md:grid-cols-2">
 
             <div className="rounded-2xl border border-slate-700 bg-[#0D1722] p-6">
               <h3 className="text-2xl font-bold text-red-500">
-                ⚡ Fast Gameplay
+               {t.fastGameplay}
               </h3>
 
               <p className="mt-4 leading-8 text-gray-400">
-                Enjoy smooth performance, quick loading, and responsive gameplay
-                designed for mobile users.
+               {t.fastGameplayDesc}
               </p>
             </div>
 
             <div className="rounded-2xl border border-slate-700 bg-[#0D1722] p-6">
               <h3 className="text-2xl font-bold text-red-500">
-                🎁 Daily Rewards
+                {t.dailyRewards}
               </h3>
 
               <p className="mt-4 leading-8 text-gray-400">
-                Explore welcome rewards, daily bonuses, cashback offers, and
-                referral campaigns available on the platform.
+       {t.dailyRewardsDesc}
               </p>
             </div>
 
@@ -253,13 +196,11 @@ export default function GamesPage() {
         <div className="mt-20 rounded-3xl bg-gradient-to-r from-red-600 to-red-700 p-10 text-center">
 
           <h2 className="text-4xl font-black text-white">
-            Ready to Start Playing?
+            {t.ctaTitle}
           </h2>
 
           <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 tracking-wide text-gray-200">
-            Download the latest PlayBollyGame APK today and enjoy exciting
-            games, daily rewards, referral bonuses, cashback offers,
-            and exclusive promotions.
+           {t.ctaDescription}
           </p>
 
           <a
@@ -269,7 +210,7 @@ export default function GamesPage() {
             className="mt-8 inline-flex items-center gap-3 rounded-2xl bg-gradient-to-r from-red-600 via-red-700 to-[#990000] px-10 py-5 text-lg font-bold text-white shadow-[0_0_30px_rgba(220,38,38,.45)] transition-all duration-300 hover:scale-105 hover:shadow-[0_0_40px_rgba(220,38,38,.6)] active:scale-95"
           >
             <FaDownload />
-            Download BollyGame
+           {t.downloadAPK}
           </a>
 
         </div>

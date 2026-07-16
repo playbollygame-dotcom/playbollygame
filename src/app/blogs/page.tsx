@@ -1,19 +1,22 @@
 "use client";
 
 import Blogs from "@/components/Blogs";
+import { useTranslation } from "@/hooks/useTranslation";
 
 export default function BlogsPage() {
+  const t = useTranslation();
+
   return (
-    <main className="min-h-screen bg-[#050B12] text-white py-32">
+    <main className="min-h-screen bg-[#050B12] py-32 text-white">
 
       <div className="mx-auto max-w-7xl px-6">
 
         <h1 className="text-5xl font-bold">
-          Latest Blogs
+          {t.blogTitle}
         </h1>
 
         <p className="mt-6 text-gray-400">
-          Gaming news, APK updates and guides.
+          {t.blogDescription}
         </p>
 
       </div>
