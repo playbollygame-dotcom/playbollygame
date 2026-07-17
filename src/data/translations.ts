@@ -8,6 +8,7 @@ import { footer } from "@/translations/footer";
 import { games } from "@/translations/games";
 import { blogs } from "@/translations/blogs";
 import { common } from "@/translations/common";
+import { bonus } from "@/translations/bonus";
 
 export const translations = {
   en: {
@@ -21,6 +22,7 @@ export const translations = {
     ...games.en,
     ...blogs.en,
     ...common.en,
+    ...bonus.en,
   },
 
   hi: {
@@ -34,5 +36,6 @@ export const translations = {
     ...games.hi,
     ...blogs.hi,
     ...common.hi,
+     ...bonus.hi,
   },
 };

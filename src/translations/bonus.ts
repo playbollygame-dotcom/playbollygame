@@ -1,5 +1,6 @@
 export const bonus = {
   en: {
+    
     bonusBadge: "Bonus Guide",
 
     bonusTitle: "PlayBollyGame Bonus Guide",
