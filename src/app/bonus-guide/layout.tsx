@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   ],
 };
 
-export default function Layout({
+export default function BonusGuideLayout({
   children,
 }: {
   children: React.ReactNode;
