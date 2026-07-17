@@ -1,5 +1,14 @@
 export const home = {
   en: {
+    protectedTitle: "Protected Accounts",
+protectedDescription: "Advanced account security for all users.",
+
+withdrawTitle: "Fast Withdrawals",
+withdrawDescription: "Quick and smooth withdrawal processing.",
+
+paymentTitle: "Secure Payments",
+paymentDescription: "Trusted payment methods with encryption.",
+
     faqTitle: "Frequently Asked Questions",
 
 faq1Title: "What is BollyGame?",
@@ -25,12 +34,6 @@ finalButton: "Download BollyGame APK",
 
 securityDescription:
   "Security plays an important role in online gaming. BollyGame provides secure accounts, reliable payment methods, and a smooth gaming experience.",
-
-protectedTitle: "Protected Accounts",
-
-withdrawTitle: "Fast Withdrawals",
-
-paymentTitle: "Secure Payments",
 
     referralTitle: "Referral Program",
 
@@ -121,6 +124,14 @@ articleDownload: "Download BollyGame APK",
   },
 
   hi: {
+    protectedTitle: "सुरक्षित अकाउंट",
+protectedDescription: "सभी उपयोगकर्ताओं के लिए उन्नत अकाउंट सुरक्षा।",
+
+withdrawTitle: "तेज़ विदड्रॉल",
+withdrawDescription: "तेज़ और आसान विदड्रॉल प्रक्रिया।",
+
+paymentTitle: "सुरक्षित भुगतान",
+paymentDescription: "एन्क्रिप्शन के साथ सुरक्षित भुगतान प्रणाली।",
 
     faqTitle: "अक्सर पूछे जाने वाले प्रश्न",
 
@@ -147,12 +158,6 @@ finalButton: "बॉलीगेम APK डाउनलोड करें",
 
 securityDescription:
   "ऑनलाइन गेमिंग में सुरक्षा सबसे महत्वपूर्ण है। BollyGame सुरक्षित अकाउंट, विश्वसनीय भुगतान और बेहतरीन गेमिंग अनुभव प्रदान करता है।",
-
-protectedTitle: "सुरक्षित अकाउंट",
-
-withdrawTitle: "तेज़ विदड्रॉल",
-
-paymentTitle: "सुरक्षित भुगतान",
 
     referralTitle: "रेफरल प्रोग्राम",
 

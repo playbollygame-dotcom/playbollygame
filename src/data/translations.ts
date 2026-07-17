@@ -9,7 +9,7 @@ import { games } from "@/translations/games";
 import { blogs } from "@/translations/blogs";
 import { common } from "@/translations/common";
 import { bonus } from "@/translations/bonus";
-
+const test = home.en.protectedDescription;
 export const translations = {
   en: {
     ...navbar.en,
