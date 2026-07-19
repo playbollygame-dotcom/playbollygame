@@ -1,7 +1,15 @@
+"use client";
+
+import { useLanguage } from "@/context/LanguageContext";
+import { downloadSection } from "@/translations/downloadSection";
+
 const DOWNLOAD_URL =
   "https://lp.bollygame.com/m/share?channel=0&userId=3784779&shareCode=3784779&bindCode=100";
 
 export default function DownloadSection() {
+  const { language } = useLanguage();
+  const t = downloadSection[language];
+
   return (
     <section className="relative overflow-hidden bg-gradient-to-r from-[#2B0000] via-[#590000] to-[#990000] py-24 text-white">
 
@@ -30,19 +38,17 @@ export default function DownloadSection() {
         {/* Heading */}
 
         <h2 className="text-5xl font-black leading-tight md:text-6xl">
-          Ready to Play?
+          {t.title}
         </h2>
 
-        {/* Gold Divider */}
+        {/* Divider */}
 
         <div className="mx-auto mt-5 h-1 w-28 rounded-full bg-yellow-400"></div>
 
         {/* Description */}
 
         <p className="mx-auto mt-8 max-w-3xl text-lg leading-8 text-gray-100 md:text-xl">
-          Download the latest <strong>PlayBollyGame APK</strong> and enjoy
-          exciting rewards, secure gameplay, fast downloads, daily bonuses,
-          referral benefits, and the best gaming experience.
+          {t.description}
         </p>
 
         {/* Download Button */}
@@ -55,7 +61,7 @@ export default function DownloadSection() {
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-3 rounded-2xl bg-gradient-to-r from-red-600 to-red-700 px-10 py-5 text-xl font-bold text-white transition-all duration-300 hover:scale-105 hover:shadow-[0_0_35px_rgba(220,38,38,.45)]"
           >
-            ⬇ Download BollyGame APK
+            {t.download}
           </a>
 
         </div>
@@ -64,13 +70,13 @@ export default function DownloadSection() {
 
         <div className="mt-14 flex flex-wrap justify-center gap-8 text-sm font-medium text-gray-200">
 
-          <span>⚡ Fast Download</span>
+          <span>{t.feature1}</span>
 
-          <span>🛡 Secure APK</span>
+          <span>{t.feature2}</span>
 
-          <span>🎁 Daily Rewards</span>
+          <span>{t.feature3}</span>
 
-          <span>💰 Welcome Bonus</span>
+          <span>{t.feature4}</span>
 
         </div>
 

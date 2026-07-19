@@ -1,6 +1,12 @@
 "use client";
 
-import { createContext, useContext, useEffect, useState } from "react";
+import {
+  createContext,
+  useContext,
+  useEffect,
+  useState,
+  ReactNode,
+} from "react";
 
 type Language = "en" | "hi";
 
@@ -14,14 +20,14 @@ const LanguageContext = createContext<LanguageContextType | null>(null);
 export function LanguageProvider({
   children,
 }: {
-  children: React.ReactNode;
+  children: ReactNode;
 }) {
   const [language, setLanguage] = useState<Language>("en");
 
   useEffect(() => {
     const saved = localStorage.getItem("language") as Language | null;
 
-    if (saved) {
+    if (saved === "en" || saved === "hi") {
       setLanguage(saved);
     }
   }, []);
@@ -29,11 +35,6 @@ export function LanguageProvider({
   const changeLanguage = (lang: Language) => {
     setLanguage(lang);
     localStorage.setItem("language", lang);
-
-   const changeLanguage = (lang: Language) => {
-  setLanguage(lang);
-  localStorage.setItem("language", lang);
-};
   };
 
   return (
@@ -52,7 +53,7 @@ export function useLanguage() {
   const context = useContext(LanguageContext);
 
   if (!context) {
-    throw new Error("LanguageProvider missing");
+    throw new Error("useLanguage must be used inside LanguageProvider");
   }
 
   return context;

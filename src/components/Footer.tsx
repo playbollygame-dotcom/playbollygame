@@ -1,111 +1,98 @@
+"use client";
+
 import {
   FaFacebookF,
   FaInstagram,
   FaTelegramPlane,
   FaYoutube,
 } from "react-icons/fa";
+import { useLanguage } from "@/context/LanguageContext";
+import { footer } from "@/translations/footer";
 
 const DOWNLOAD_URL =
   "https://lp.bollygame.com/m/share?channel=0&userId=3784779&shareCode=3784779&bindCode=100";
 
 export default function Footer() {
+  const { language } = useLanguage();
+  const t = footer[language];
+
   return (
     <footer className="bg-black text-white">
-
       <div className="mx-auto max-w-7xl px-6 py-16">
-
         <div className="grid gap-10 md:grid-cols-4">
 
           {/* Brand */}
 
           <div>
-
             <h2 className="text-3xl font-bold text-red-500">
               PlayBollyGame
             </h2>
 
             <p className="mt-5 text-gray-400">
-              India's trusted gaming platform with exciting games,
-              rewards and secure gameplay.
+              {t.brandDesc}
             </p>
 
             <a
               href={DOWNLOAD_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-6 inline-block rounded-xl bg-red-600 px-6 py-3 font-semibold hover:bg-red-700 transition"
+              className="mt-6 inline-block rounded-xl bg-red-600 px-6 py-3 font-semibold transition hover:bg-red-700"
             >
-              Download Bollygame
+              {t.download}
             </a>
-
           </div>
 
           {/* Quick Links */}
 
           <div>
-
             <h3 className="mb-5 text-xl font-semibold">
-              Quick Links
+              {t.quickLinks}
             </h3>
 
             <ul className="space-y-3 text-gray-400">
-              <li>Home</li>
-              <li>Blogs</li>
-              <li>FAQ</li>
-              <li>Contact</li>
+              <li>{t.home}</li>
+              <li>{t.blogs}</li>
+              <li>{t.faq}</li>
+              <li>{t.contact}</li>
             </ul>
-
           </div>
 
-          {/* Games */}
+          {/* Popular Games */}
 
           <div>
-
             <h3 className="mb-5 text-xl font-semibold">
-              Popular Games
+              {t.popularGames}
             </h3>
 
             <ul className="space-y-3 text-gray-400">
-              <li>Rummy</li>
-              <li>Ludo</li>
-              <li>Dragon vs Tiger</li>
-              <li>7 Up Down</li>
+              <li>{t.game1}</li>
+              <li>{t.game2}</li>
+              <li>{t.game3}</li>
+              <li>{t.game4}</li>
             </ul>
-
           </div>
 
           {/* Social */}
 
           <div>
-
             <h3 className="mb-5 text-xl font-semibold">
-              Follow Us
+              {t.followUs}
             </h3>
 
             <div className="flex gap-4 text-2xl">
-
               <FaFacebookF className="cursor-pointer hover:text-red-500" />
-
               <FaInstagram className="cursor-pointer hover:text-red-500" />
-
               <FaTelegramPlane className="cursor-pointer hover:text-red-500" />
-
               <FaYoutube className="cursor-pointer hover:text-red-500" />
-
             </div>
-
           </div>
 
         </div>
 
         <div className="mt-12 border-t border-slate-800 pt-8 text-center text-gray-500">
-
-          © 2026 PlayBollyGame. All Rights Reserved.
-
+          {t.copyright}
         </div>
-
       </div>
-
     </footer>
   );
 }
