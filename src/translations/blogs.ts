@@ -33,6 +33,7 @@ export const blogs = {
   },
 
   hi: {
+    
     latestArticles: "नवीनतम लेख",
 
     latestBlogs: "नवीनतम ब्लॉग",

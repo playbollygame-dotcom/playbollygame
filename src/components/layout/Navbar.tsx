@@ -6,7 +6,7 @@ import { useState } from "react";
 import { FaBars, FaTimes, FaDownload } from "react-icons/fa";
 
 import { useLanguage } from "@/context/LanguageContext";
-import { translations } from "@/data/translations";
+import { translations } from "@/context/translations";
 
 const DOWNLOAD_URL =
   "https://lp.bollygame.com/m/share?channel=0&userId=3784779&shareCode=3784779&bindCode=100";

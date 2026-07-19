@@ -1,5 +1,10 @@
 export const about = {
   en: {
+    contactTitle: "Contact Us",
+sendMessage: "Send Message",
+name: "Your Name",
+email: "Email Address",
+message: "Your Message",
 faqTitle: "Frequently Asked Questions",
 
 faqDescription:
@@ -103,6 +108,11 @@ bonusGuide: "Bonus Guide",
   },
 
   hi: {
+    contactTitle: "हमसे संपर्क करें",
+sendMessage: "संदेश भेजें",
+name: "आपका नाम",
+email: "ईमेल पता",
+message: "अपना संदेश लिखें",
     faqTitle: "अक्सर पूछे जाने वाले प्रश्न",
 
 faqDescription:
