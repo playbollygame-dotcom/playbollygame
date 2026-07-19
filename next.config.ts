@@ -18,6 +18,10 @@ const nextConfig: NextConfig = {
         destination: "/faq", // Change this if another page is a better replacement
         permanent: true,
       },
+       { source: "/contact-us",
+        destination: "/contact",
+        permanent: true,
+      },
     ];
   },
 };
