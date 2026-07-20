@@ -42,9 +42,9 @@ export async function generateMetadata({
       siteName: "PlayBollyGame",
       locale: "en_US",
       type: "article",
-      images: [
-        {
-          url: blog.image,
+     images: [
+  {
+    url: `https://www.playbollygame.com${blog.image}`,
           width: 1200,
           height: 630,
           alt: blog.title,
@@ -56,7 +56,9 @@ export async function generateMetadata({
       card: "summary_large_image",
       title: blog.metaTitle,
       description: blog.metaDescription,
-      images: [blog.image],
+      images: [
+  `https://www.playbollygame.com${blog.image}`,
+],
     },
   };
 }
@@ -75,12 +77,14 @@ export default async function BlogPage({ params }: Props) {
     .slice(0, 4);
 
   const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    headline: blog.title,
-    description: blog.metaDescription,
-    image: `https://www.playbollygame.com${blog.image}`,
-    datePublished: blog.date,
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  headline: blog.title,
+  description: blog.metaDescription,
+  image: `https://www.playbollygame.com${blog.image}`,
+
+  datePublished: "2026-07-15",
+  dateModified: "2026-07-20",
 
     author: {
       "@type": "Organization",
