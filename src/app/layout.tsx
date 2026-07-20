@@ -19,8 +19,8 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.playbollygame.com"),
 
   title: {
-    default: "PlayBollyGame (2026)",
-    template: "%s | PlayBollyGame (2026)",
+    default: "PlayBollyGame (2026) | APK Download, Bonus & Games",
+    template: "%s | PlayBollyGame",
   },
 
   description:
@@ -56,12 +56,10 @@ export const metadata: Metadata = {
   creator: "PlayBollyGame",
   publisher: "PlayBollyGame",
 
-
-
   openGraph: {
-    title: "PlayBollyGame (2026)",
+    title: "PlayBollyGame (2026) | APK Download, Bonus & Games",
     description:
-      "Download the latest PlayBollyGame APK (2026) and enjoy exciting games, welcome bonuses, cashback offers, referral rewards, and secure gameplay.",
+      "Download the latest PlayBollyGame APK (2026). Enjoy exciting games, welcome bonuses, cashback offers, referral rewards, and secure gameplay.",
     url: "https://www.playbollygame.com",
     siteName: "PlayBollyGame",
     locale: "en_US",
@@ -78,15 +76,19 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "PlayBollyGame (2026)",
+    title: "PlayBollyGame (2026) | APK Download, Bonus & Games",
     description:
-      "Download the latest PlayBollyGame APK and enjoy exciting games with amazing bonuses.",
+      "Download the latest PlayBollyGame APK (2026). Enjoy exciting games, welcome bonuses, cashback offers, referral rewards, and secure gameplay.",
     images: ["/home-banner.webp"],
   },
 
   robots: {
     index: true,
     follow: true,
+  },
+
+  alternates: {
+    canonical: "https://www.playbollygame.com",
   },
 };
 
@@ -116,7 +118,6 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-
         <Script
           id="organization-schema"
           type="application/ld+json"
@@ -134,10 +135,11 @@ export default function RootLayout({
             __html: JSON.stringify(websiteSchema),
           }}
         />
-<LanguageProvider>
-  <GoogleTranslate />
-        {children}
-</LanguageProvider>
+
+        <LanguageProvider>
+          <GoogleTranslate />
+          {children}
+        </LanguageProvider>
       </body>
     </html>
   );
