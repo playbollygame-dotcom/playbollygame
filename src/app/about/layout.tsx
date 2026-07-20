@@ -1,20 +1,26 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About PlayBollyGame (2026)",
+  title: "About PlayBollyGame | APK Download, Bonus & Platform Guide (2026)",
 
   description:
-    "Learn about PlayBollyGame, India's popular gaming platform. Discover exciting games, APK downloads, welcome bonuses, cashback offers, referral rewards and secure gameplay.",
+    "Learn everything about PlayBollyGame (2026), including APK download, exciting games, welcome bonus offers, referral rewards, cashback, secure gameplay, and platform features.",
 
   keywords: [
     "About PlayBollyGame",
     "PlayBollyGame",
     "PlayBollyGame APK",
+    "PlayBollyGame APK Download",
     "PlayBollyGame 2026",
+    "PlayBollyGame Bonus",
+    "PlayBollyGame Games",
     "BollyGame",
     "Bolly Game",
+    "Bolly Game APK",
     "Gaming Platform",
     "APK Download",
+    "Bonus Guide",
+    "Referral Bonus",
   ],
 
   alternates: {
@@ -22,11 +28,29 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: "About PlayBollyGame (2026)",
+    title: "About PlayBollyGame | APK Download, Bonus & Platform Guide (2026)",
     description:
-      "Learn more about PlayBollyGame, its features, games, bonuses and secure gaming experience.",
+      "Discover PlayBollyGame's games, APK download, welcome bonuses, referral rewards, secure gameplay, and platform features.",
     url: "https://www.playbollygame.com/about",
+    siteName: "PlayBollyGame",
+    locale: "en_US",
     type: "website",
+    images: [
+      {
+        url: "/about-banner.webp",
+        width: 1200,
+        height: 630,
+        alt: "About PlayBollyGame",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "About PlayBollyGame | APK Download, Bonus & Platform Guide (2026)",
+    description:
+      "Learn about PlayBollyGame, APK download, games, welcome bonuses, referral rewards, and secure gaming.",
+    images: ["/about-banner.webp"],
   },
 
   robots: {
