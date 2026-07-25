@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import GoogleTranslate from "@/components/GoogleTranslate";
 import { LanguageProvider } from "@/context/LanguageContext";
 import Script from "next/script";
@@ -145,6 +146,7 @@ export default function RootLayout({
           {children}
         </LanguageProvider>
       </body>
+       <GoogleAnalytics gaId="G-KF43HXSQ0W" />
     </html>
   );
 }
