@@ -46,7 +46,11 @@ export const metadata: Metadata = {
     "Welcome Bonus",
     "Bollygame Blogs",
   ],
-
+ verification: {
+    other: {
+      "p:domain_verify": "c80fe60eda73ba7d4e1f2cae347d3671",
+    },
+  },
   authors: [
     {
       name: "PlayBollyGame",
