@@ -50,7 +50,7 @@ export const metadata: Metadata = {
  verification: {
     other: {
       "p:domain_verify": "c80fe60eda73ba7d4e1f2cae347d3671",
-    },
+ "msvalidate.01": "EA6E2829A1F4E9EC6C114B3D7E90260B",    },
   },
   authors: [
     {
