@@ -92,9 +92,9 @@ export const metadata: Metadata = {
     follow: true,
   },
 
-  alternates: {
-    canonical: "https://www.playbollygame.com",
-  },
+ alternates: {
+  canonical: "https://www.playbollygame.com/",
+},
 };
 
 const organizationSchema = {
