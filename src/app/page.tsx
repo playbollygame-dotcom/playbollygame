@@ -1,6 +1,6 @@
 "use client";
+
 import ExploreMore from "@/components/ExploreMore";
-import { useEffect, useState } from "react";
 import Image from "next/image";
 import Navbar from "../components/layout/Navbar";
 import Hero from "../components/Hero";
@@ -18,23 +18,8 @@ import DownloadSection from "../components/DownloadSection";
 import Footer from "../components/Footer";
 import ScrollTop from "../components/ScrollTop";
 import ScrollProgress from "../components/ScrollProgress";
-import Loader from "../components/Loader";
 
 export default function Home() {
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 1200);
-
-    return () => clearTimeout(timer);
-  }, []);
-
-  if (loading) {
-    return <Loader />;
-  }
-
   return (
     <>
       <ScrollProgress />
@@ -77,7 +62,6 @@ export default function Home() {
 
         {/* Download */}
         <DownloadSection />
-        
       </main>
 
       <Footer />
