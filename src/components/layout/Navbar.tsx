@@ -9,7 +9,7 @@ import { useLanguage } from "@/context/LanguageContext";
 import { translations } from "@/context/translations";
 
 const DOWNLOAD_URL =
-  "https://lp.bollygame.xyz/m/share?channel=0&userId=3784779&shareCode=3784779&t=49664&bindCode=0/m/share?channel=0&userId=3784779&shareCode=3784779&bindCode=100";
+  "https://lp.bollygame.xyz/m/share?channel=0&userId=3784779&shareCode=3784779&t=49664&bindCode=0
 
 export default function Navbar() {
   const pathname = usePathname();
